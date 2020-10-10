@@ -1,31 +1,42 @@
 using System;
 using System.Collections;
 using Model;
-using UnityEngine;
 
 namespace Service
 {
     public class SlotService
     {
-        
         private NetworkService _networkService = new NetworkService();
 
 
         [Serializable]
-        private class StallResponse
+        private class SlotListResponse
         {
-            public Stall stall;
+            public Slot[] slot_list;
         }
-        
-        public IEnumerator GETStall(int id, Action<Stall> callback)
-        {
-            string endPoint = $"stall/{id}/";
-            Action<StallResponse> responseCallback = o =>
-            {
-                callback(o.stall);
-            };
 
-            return _networkService.Get<StallResponse>(endPoint, responseCallback);
+
+        [Serializable]
+        private class SlotResponse
+        {
+            public Slot slot;
+        }
+
+        public IEnumerator GETSlotList(Action<Slot[]> callback)
+        {
+            string endPoint = $"slot/";
+            Action<SlotListResponse> responseCallback = o => { callback(o.slot_list); };
+
+            return _networkService.Get<SlotListResponse>(endPoint, responseCallback);
+        }
+
+
+        public IEnumerator GETSlot(int id, Action<Slot> callback)
+        {
+            string endPoint = $"slot/{id}/";
+            Action<SlotResponse> responseCallback = o => { callback(o.slot); };
+
+            return _networkService.Get<SlotResponse>(endPoint, responseCallback);
         }
     }
 }
