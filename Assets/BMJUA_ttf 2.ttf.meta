@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4fbfe0ac015a24aaba8f3223fd8e2dfa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - BM JUA_TTF
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a9c131ea087664d48ae5cce798c7c5e3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
