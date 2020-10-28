@@ -13,7 +13,7 @@ namespace Service
     public class NetworkService
     {
         
-        private string baseURL = "http://3.34.44.222/api/";
+        private string baseURL = "http://ec2-13-209-66-8.ap-northeast-2.compute.amazonaws.com/api/";
         private string ToQueryString(NameValueCollection nvc)
         {
             if (nvc == null) return string.Empty;

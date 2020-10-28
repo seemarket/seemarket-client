@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 
 namespace Model
@@ -13,5 +14,11 @@ namespace Model
         public int row;
         public int column;
         public int depth;
+
+        public override string ToString()
+        {
+            return JsonUtility.ToJson(this);
+        }
     }
+    
 }
