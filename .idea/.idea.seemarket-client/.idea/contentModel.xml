@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="GoogleARCore" t="Include">
           <e p="Editor" t="Include">
+            <e p="ARCoreAndroidKeylessDependencies.template" t="Include" />
             <e p="ARCoreiOSDependencies.template" t="Include" />
           </e>
           <e p="Examples" t="Include">
@@ -51,6 +52,8 @@
                 <e p="Editor" t="Include">
                   <e p="PointcloudVisualizerEditor.cs" t="Include" />
                 </e>
+                <e p="InstantPlacementEffect.cs" t="Include" />
+                <e p="InstantPlacementMenu.cs" t="Include" />
                 <e p="PlaneDiscoveryGuide.cs" t="Include" />
                 <e p="PointcloudVisualizer.cs" t="Include" />
                 <e p="RawImageVideoPlayer.cs" t="Include" />
@@ -73,6 +76,7 @@
             <e p="HelloAR" t="Include">
               <e p="Scripts" t="Include">
                 <e p="HelloARController.cs" t="Include" />
+                <e p="SettingsMenu.cs" t="Include" />
               </e>
             </e>
             <e p="ObjectManipulation" t="Include">
@@ -104,6 +108,19 @@
                 </e>
                 <e p="ObjectManipulationController.cs" t="Include" />
                 <e p="PawnManipulator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PersistentCloudAnchors" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ARViewManager.cs" t="Include" />
+                <e p="CircleRenderer.cs" t="Include" />
+                <e p="CloudAnchorHistory.cs" t="Include" />
+                <e p="DoubleLabelsItem.cs" t="Include" />
+                <e p="MapQualityBar.cs" t="Include" />
+                <e p="MapQualityIndicator.cs" t="Include" />
+                <e p="MultiselectionDropdown.cs" t="Include" />
+                <e p="PersistentCloudAnchorsController.cs" t="Include" />
+                <e p="ResolveMenuManager.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -231,6 +248,7 @@
                   <e p="ArcoreSdkLog.cs" t="Include" />
                 </e>
                 <e p="AndroidDependenciesHelper.cs" t="Include" />
+                <e p="AndroidKeylessProcessBuild.cs" t="Include" />
                 <e p="AndroidManifestMerger.cs" t="Include" />
                 <e p="ARCoreAnalytics.cs" t="Include" />
                 <e p="ARCoreAnalyticsGUI.cs" t="Include" />
@@ -264,6 +282,7 @@
                 <e p="ExperimentBase.cs" t="Include" />
                 <e p="ExperimentManager.cs" t="Include" />
               </e>
+              <e p="FeatureMapQuality.cs" t="Include" />
               <e p="FeaturePoint.cs" t="Include" />
               <e p="FeaturePointOrientationMode.cs" t="Include" />
               <e p="Frame.cs" t="Include" />
@@ -321,6 +340,12 @@
             </e>
           </e>
         </e>
+        <e p="Inside Store" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="RotateMoveCamera.cs" t="Include" />
+          </e>
+        </e>
         <e p="PlayServicesResolver" t="Include">
           <e p="Editor" t="Include">
             <e p="play-services-resolver_v1.2.122.0.txt" t="Include" />
@@ -333,13 +358,21 @@
             <e p="Slot.cs" t="Include" />
             <e p="Stall.cs" t="Include" />
           </e>
+          <e p="PrefabCollection.cs" t="Include" />
           <e p="Service" t="Include">
             <e p="DrinkService.cs" t="Include" />
             <e p="NetworkService.cs" t="Include" />
             <e p="SlotService.cs" t="Include" />
             <e p="StallService.cs" t="Include" />
           </e>
+          <e p="ShelvingTest.cs" t="Include" />
           <e p="TestCode.cs" t="Include" />
+        </e>
+        <e p="Shelving.cs" t="Include" />
+        <e p="test" t="Include">
+          <e p="CameraScript.cs" t="Include" />
+          <e p="CanvasControl.cs" t="Include" />
+          <e p="UserInterface.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

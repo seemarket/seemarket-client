@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="" />
+    <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Model/Slot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Model/Slot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Service/NetworkService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Service/NetworkService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shelving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shelving.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +35,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/94/23b02042/WebUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECBAB075-47B5-431B-A8E9-EAA7B3FB8CCD/51/4de730bf/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
@@ -42,7 +49,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/RequestService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Response.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Slot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Stall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Drink.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/StallService.cs" />
@@ -50,6 +56,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/DrinkService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/NetworkService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shelving.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Slot.cs" />
       </list>
     </option>
   </component>
@@ -59,6 +67,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3496708" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29992685" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
@@ -74,10 +85,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22319">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="22319" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -100,7 +111,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -111,11 +122,44 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom" timestamp="1603874488262">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603874488262" />
+    <state width="1398" height="331" key="GridCell.Tab.0.center" timestamp="1603874488261">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603874488261" />
+    <state width="1398" height="331" key="GridCell.Tab.0.left" timestamp="1603874488260">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603874488260" />
+    <state width="1398" height="331" key="GridCell.Tab.0.right" timestamp="1603874488262">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603874488262" />
+    <state width="1398" height="331" key="GridCell.Tab.1.bottom" timestamp="1603874518040">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603874518040" />
+    <state width="1398" height="331" key="GridCell.Tab.1.center" timestamp="1603874518039">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1603874518039" />
+    <state width="1398" height="331" key="GridCell.Tab.1.left" timestamp="1603874518039">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1603874518039" />
+    <state width="1398" height="331" key="GridCell.Tab.1.right" timestamp="1603874518040">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="331" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1603874518040" />
     <state x="221" y="59" key="SettingsEditor" timestamp="1602336302123">
       <screen x="0" y="23" width="1440" height="795" />
     </state>
@@ -140,6 +184,58 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="28">
+            <startOffsets>
+              <option value="717" />
+            </startOffsets>
+            <endOffsets>
+              <option value="743" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
+          <line>31</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="31">
+            <startOffsets>
+              <option value="805" />
+            </startOffsets>
+            <endOffsets>
+              <option value="806" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="32">
+            <startOffsets>
+              <option value="819" />
+            </startOffsets>
+            <endOffsets>
+              <option value="864" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="34">
+            <startOffsets>
+              <option value="890" />
+            </startOffsets>
+            <endOffsets>
+              <option value="914" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
