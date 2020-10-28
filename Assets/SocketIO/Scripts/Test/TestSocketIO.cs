@@ -27,6 +27,7 @@
 #endregion
 
 using System.Collections;
+using Model;
 using UnityEngine;
 using SocketIO;
 
@@ -38,63 +39,46 @@ public class TestSocketIO : MonoBehaviour
 	{
 		GameObject go = GameObject.Find("SocketIO");
 		socket = go.GetComponent<SocketIOComponent>();
-
-		socket.On("open", TestOpen);
-		socket.On("boop", TestBoop);
-		socket.On("error", TestError);
-		socket.On("close", TestClose);
+		socket.On("open", HandleOpen);
+		socket.On("error", HandleError);
+		socket.On("close", HandleClose);
 		
-		StartCoroutine("BeepBoop");
+		socket.On("update", HandleSlotUpdate);
+		
+		StartCoroutine("StartSimulation");
+	}
+	
+	public void HandleSlotUpdate(SocketIOEvent e)
+	{
+		Debug.Log("[SocketIO] Update received: " + e.name + " " + e.data);
+
+		if (e.data == null) { return; }
+		string rawString = e.data.ToString();
+		SlotUpdate update = JsonUtility.FromJson<SlotUpdate>(rawString);
+		Debug.Log(update.ToString());
+	
 	}
 
-	private IEnumerator BeepBoop()
+	private IEnumerator StartSimulation()
 	{
 		// wait 1 seconds and continue
 		yield return new WaitForSeconds(1);
 		
-		socket.Emit("beep");
-		
-		// wait 3 seconds and continue
-		yield return new WaitForSeconds(3);
-		
-		socket.Emit("beep");
-		
-		// wait 2 seconds and continue
-		yield return new WaitForSeconds(2);
-		
-		socket.Emit("beep");
-		
-		// wait ONE FRAME and continue
-		yield return null;
-		
-		socket.Emit("beep");
-		socket.Emit("beep");
+		socket.Emit("start_simulation");
 	}
 
-	public void TestOpen(SocketIOEvent e)
+	public void HandleOpen(SocketIOEvent e)
 	{
 		Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
 	}
 	
-	public void TestBoop(SocketIOEvent e)
-	{
-		Debug.Log("[SocketIO] Boop received: " + e.name + " " + e.data);
-
-		if (e.data == null) { return; }
-
-		Debug.Log(
-			"#####################################################" +
-			"THIS: " + e.data.GetField("this").str +
-			"#####################################################"
-		);
-	}
 	
-	public void TestError(SocketIOEvent e)
+	public void HandleError(SocketIOEvent e)
 	{
 		Debug.Log("[SocketIO] Error received: " + e.name + " " + e.data);
 	}
 	
-	public void TestClose(SocketIOEvent e)
+	public void HandleClose(SocketIOEvent e)
 	{	
 		Debug.Log("[SocketIO] Close received: " + e.name + " " + e.data);
 	}
