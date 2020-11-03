@@ -18,7 +18,7 @@ namespace DrinkDetailCanvas
         public Text incomeText;
         public Text descriptionText;
         public Text etcText;
-
+        public Button backButton;
 
         private Model.Drink _drink;
 
@@ -52,10 +52,12 @@ namespace DrinkDetailCanvas
             incomeText.text = "5분 후 입고"; // TODO
             descriptionText.text = _drink.description;
             StartCoroutine(DownloadImage(_drink.thumbnail_url));
+            backButton.onClick.AddListener(Close);
         }
 
         public void Close()
         {
+            Debug.Log("Button Click");
             this.gameObject.SetActive(false);
             this._drink = null;
         }

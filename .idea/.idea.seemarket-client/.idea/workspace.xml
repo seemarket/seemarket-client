@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/DrinkCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DrinkCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DrinkPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DrinkPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas/Specific_info_image.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Canvas/Specific_info_image.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +37,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/94/23b02042/WebUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/0b295a95/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/49acff7e/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55ADAE45-46CD-485B-A70E-2948332EBE8C/aa/8242e299/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -74,9 +69,10 @@
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/Parser.cs" />
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
       </list>
     </option>
   </component>

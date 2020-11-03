@@ -120,6 +120,7 @@ MonoBehaviour:
   incomeText: {fileID: 5015021886999147563}
   descriptionText: {fileID: 2519269786072426504}
   etcText: {fileID: 7735488909354935420}
+  backButton: {fileID: 7999632904600635764}
 --- !u!1 &2670621619320280807
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +292,7 @@ GameObject:
   - component: {fileID: 6915056220806241032}
   - component: {fileID: 7999632904600635764}
   m_Layer: 5
-  m_Name: Bookmark
+  m_Name: Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,8 +315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.549, y: -1063.11}
-  m_SizeDelta: {x: 514.90216, y: 194.64777}
+  m_AnchoredPosition: {x: -16.072, y: -1205}
+  m_SizeDelta: {x: 467.85522, y: 151.87808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4673768642689880945
 CanvasRenderer:
@@ -711,7 +712,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a9c131ea087664d48ae5cce798c7c5e3, type: 3}
-    m_FontSize: 300
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -722,7 +723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uAD00\uC2EC \uBB3C\uD488 \uB4F1\uB85D"
+  m_Text: "\uB4A4\uB85C\uAC00\uAE30"
 --- !u!1 &5513061953034839233
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +735,6 @@ GameObject:
   - component: {fileID: 3460953251690735650}
   - component: {fileID: 7042226999303179839}
   - component: {fileID: 1089117189034879209}
-  - component: {fileID: 1914481217324760989}
   m_Layer: 5
   m_Name: background
   m_TagString: Untagged
@@ -799,26 +799,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1914481217324760989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5513061953034839233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7956dc78a65cc4882eb5925ed9aa9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlertText: {fileID: 0}
-  Initial: {fileID: 0}
-  init_checkText: {fileID: 0}
-  Authorize: {fileID: 0}
-  Main: {fileID: 6000692318667583420}
-  OwnerPanel: {fileID: 0}
-  StatusPanel: {fileID: 0}
-  AlertBox: {fileID: 0}
 --- !u!1 &6000692318667583420
 GameObject:
   m_ObjectHideFlags: 0
