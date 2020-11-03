@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Model;
 using Service;
+using SocketIO;
 using Unity.Profiling;
 using UnityEngine;
 
@@ -13,13 +14,65 @@ public class Shelving : MonoBehaviour
     private SlotService _slotService = new SlotService();
     private StallService _stallService = new StallService();
 
-
+    private SocketIOComponent socket;
+    
     public int rowSize = 4;
     public int columnSize = 12;
     public int depthSize = 4;
     public List<List<List<Model.Slot>>> slotData;
     // Start is called before the first frame update
     
+
+
+    private string socketURL =
+        "ws://ec2-13-209-66-8.ap-northeast-2.compute.amazonaws.com:8080/socket.io/?EIO=4&transport=websocket";
+    
+    void Start()
+    {
+        GameObject go = GameObject.Find("SocketIO");
+        socket = go.GetComponent<SocketIOComponent>();
+        socket.url = socketURL;
+        socket.On("open", HandleOpen);
+        socket.On("error", HandleError);
+        socket.On("close", HandleClose);
+        socket.On("update", HandleSlotUpdate);
+        // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
+        StartCoroutine("StartSimulation");
+    }
+
+    // 1초마다 재고 여부가 바뀌는 것을 알리는 코드를 수신합니다.
+    public void HandleSlotUpdate(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Update received: " + e.name + " " + e.data);
+        if (e.data == null) { return; }
+        string rawString = e.data.ToString();
+        SlotUpdate update = JsonUtility.FromJson<SlotUpdate>(rawString);
+        Debug.Log(update.ToString());
+    }
+
+    private IEnumerator StartSimulation()
+    {
+        // wait 1 seconds and continue
+        yield return new WaitForSeconds(1);
+		
+        socket.Emit("start_simulation");
+    }
+
+    public void HandleOpen(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
+    }
+	
+	
+    public void HandleError(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Error received: " + e.name + " " + e.data);
+    }
+	
+    public void HandleClose(SocketIOEvent e)
+    {	
+        Debug.Log("[SocketIO] Close received: " + e.name + " " + e.data);
+    }
 
     [ContextMenu("Test Run 1")]
     public void TestRun1()
