@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DrinkDetailCanvas;
 using UnityEngine;
 
 public class CObjectPool : CSingletonMono<CObjectPool>
@@ -11,11 +12,22 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     Dictionary<string, Texture> drink_textures
         = new Dictionary<string, Texture>();
     readonly string texture_prefix = "Textures/";
+    private DrinkDetailCanvasControl _detailCanvasControl;
     void Awake()
     {
         // Drink Prefab
         if (drinkPrefab == null)
+        {
             drinkPrefab = Resources.Load<DrinkObject>("DrinkPrefab");
+         
+        }
+       
+        if (_detailCanvasControl == null)
+        {
+            _detailCanvasControl = Instantiate(Resources.Load<DrinkDetailCanvasControl>("DrinkCanvas"));
+            _detailCanvasControl.gameObject.SetActive(false); 
+    
+        }
 
         for (int i = 0; i < drinkPool; ++i)
         {
@@ -25,6 +37,7 @@ public class CObjectPool : CSingletonMono<CObjectPool>
             drinkObjPool.Enqueue(go);
         }
     }
+<<<<<<< HEAD
     public Texture GetDrinkTexture(string path)
     {
         // Debug
@@ -37,6 +50,19 @@ public class CObjectPool : CSingletonMono<CObjectPool>
         return drink_textures[path];
     }
 
+=======
+
+    public DrinkDetailCanvasControl CreateDetailCanvasControl(Model.Drink drink_data)
+    {
+        _detailCanvasControl.gameObject.SetActive(true);
+        _detailCanvasControl.setDrink(drink_data);
+        _detailCanvasControl.SetCanvasState();
+        return _detailCanvasControl;
+    }
+    
+    
+    
+>>>>>>> Drink 클릭 프리펩 작성
     public DrinkObject CreateDrinkObject(Model.Drink drink_data)
     {
         var go = drinkObjPool.Dequeue();
