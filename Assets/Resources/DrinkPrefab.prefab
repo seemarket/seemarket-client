@@ -109,4 +109,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728de6dc3d9b9f045b81008498fc6ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data:
+    id: 0
+    title: a
+    type: a
+    prefab_url: a
+    description: a
+    price: 100
+    thumbnail_url: htt
   _setter: {fileID: 0}
