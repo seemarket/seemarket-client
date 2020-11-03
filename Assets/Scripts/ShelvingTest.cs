@@ -13,6 +13,8 @@ public class ShelvingTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        float a = CObjectPool.Instance.transform.localPosition.x;
+
         // 시나리오
         // 음료는 현재 5종류가 있다.
         // Drink 1, 2, 3, 4, 5는 각각 PrefabCollection의 index를 id로 인식한다.
@@ -21,7 +23,11 @@ public class ShelvingTest : MonoBehaviour
         // Row, Col, Depth. =  아이템의 좌표다. x, y, z vector 값.
         // x, y, z vector값으로 
 
-        
+        var go = CObjectPool.Instance.CreateDrinkObject(null);
+        go.transform.SetParent(this.transform);
+        go.transform.localPosition = Vector3.zero;
+        go.gameObject.SetActive(true);
+        go.transform.localScale = Vector3.one;
     }
 
     // Update is called once per frame
