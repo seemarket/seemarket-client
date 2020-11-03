@@ -12,9 +12,7 @@ public class Shelving : MonoBehaviour
  //   public List<Model.Slot> slotData;
     private DrinkService _drinkService = new DrinkService();
     private SlotService _slotService = new SlotService();
-    private StallService _stallService = new StallService();
-
-    private SocketIOComponent socket;
+    private StallService _stallService = new StallService();    
     
     public int rowSize = 4;
     public int columnSize = 12;
@@ -29,15 +27,13 @@ public class Shelving : MonoBehaviour
     
     void Start()
     {
-        GameObject go = GameObject.Find("SocketIO");
-        socket = go.GetComponent<SocketIOComponent>();
-        socket.url = socketURL;
-        socket.On("open", HandleOpen);
-        socket.On("error", HandleError);
-        socket.On("close", HandleClose);
-        socket.On("update", HandleSlotUpdate);
+        //SocketIOComponent.Instance.url = socketURL;
+        //SocketIOComponent.Instance.On("open", HandleOpen);
+        //SocketIOComponent.Instance.On("error", HandleError);
+        //SocketIOComponent.Instance.On("close", HandleClose);
+        //SocketIOComponent.Instance.On("update", HandleSlotUpdate);
         // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
-        StartCoroutine("StartSimulation");
+        //StartCoroutine("StartSimulation");
     }
 
     // 1초마다 재고 여부가 바뀌는 것을 알리는 코드를 수신합니다.
@@ -48,6 +44,8 @@ public class Shelving : MonoBehaviour
         string rawString = e.data.ToString();
         SlotUpdate update = JsonUtility.FromJson<SlotUpdate>(rawString);
         Debug.Log(update.ToString());
+        // 이벤트 핸들러
+        //update.updated_slot_info.id
     }
 
     private IEnumerator StartSimulation()
@@ -55,14 +53,13 @@ public class Shelving : MonoBehaviour
         // wait 1 seconds and continue
         yield return new WaitForSeconds(1);
 		
-        socket.Emit("start_simulation");
+        SocketIOComponent.Instance.Emit("start_simulation");
     }
 
     public void HandleOpen(SocketIOEvent e)
     {
         Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
     }
-	
 	
     public void HandleError(SocketIOEvent e)
     {
@@ -138,6 +135,12 @@ public class Shelving : MonoBehaviour
     [ContextMenu("Test Run 2")]
     public void TestRun2()
     {
+        StartCoroutine(_drinkService.GETDrinkList(o => {
+            foreach (Drink d in o)
+            {
+                Debug.Log(d.title.ToString());
+            }
+        }));
         // Slot - Manager
         // 슬롯은 한번에 배치? 
         // 음료 종류

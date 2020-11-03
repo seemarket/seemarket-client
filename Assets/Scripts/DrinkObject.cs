@@ -2,28 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshRenderer), typeof(MeshCollider))]
+[RequireComponent(typeof(MeshRenderer), typeof(Collider))]
 public class DrinkObject : MonoBehaviour
 {
+    public List<GameObject> interactions;
+
     readonly float offset_height = 0.0784f;
     readonly float offset_rotation = 200f;
-
+//1.7031
+//1.2655
+//0.8296
+//-0.44 , 0.391
     public Model.Drink data;
     Renderer m_Renderer;
 
-    #region TEST CODE
-    public Texture _setter;
-    [ContextMenu("SET TEST")]
-    void SetTexture() { SetTexture(_setter); }
-    #endregion
-
-    void Start()
+    void Awake()
     {
-        m_Renderer = GetComponent<Renderer>();
+        m_Renderer = this.GetComponent<Renderer>();
     }
     public void SetTexture(Texture tex)
     {
-        m_Renderer.material.SetTexture("_MainTex", _setter);
+        m_Renderer.material.SetTexture("_MainTex", tex);
     }
 
     ///<summary>
@@ -32,6 +31,7 @@ public class DrinkObject : MonoBehaviour
     public void Setup(Model.Drink drink_data)
     {
         this.data = drink_data;
+        this.SetTexture(CObjectPool.Instance.GetDrinkTexture(drink_data.prefab_url));
     }
 
     #region Unity interactions
@@ -46,6 +46,8 @@ public class DrinkObject : MonoBehaviour
     void OnClickFunction()
     {
         Debug.Log("Mouse click up");
+        Debug.Log(m_Renderer.bounds.size.y);
+        
     }
     void OnHoverFunction()
     {

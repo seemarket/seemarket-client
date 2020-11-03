@@ -20,5 +20,4 @@ namespace Model
             return JsonUtility.ToJson(this);
         }
     }
-    
 }

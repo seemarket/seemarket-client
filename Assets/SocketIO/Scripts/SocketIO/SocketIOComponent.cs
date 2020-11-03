@@ -38,7 +38,7 @@ using WebSocketSharp.Net;
 
 namespace SocketIO
 {
-	public class SocketIOComponent : MonoBehaviour
+	public class SocketIOComponent : CSingletonMono<SocketIOComponent>
 	{
 		#region Public Properties
 

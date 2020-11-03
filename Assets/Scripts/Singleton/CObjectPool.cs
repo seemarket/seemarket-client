@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class CObjectPool : CSingletonMono<CObjectPool>
 {
-    readonly string collection_path = "ResourcesCollection";
-    public PrefabCollection prefab_collection;
+    public ShelfObject main;
     DrinkObject drinkPrefab;
-    Queue<DrinkObject> objectPool = new Queue<DrinkObject>();
+    Queue<DrinkObject> drinkObjPool = new Queue<DrinkObject>();
     readonly int drinkPool = 192;
+    Dictionary<string, Texture> drink_textures
+        = new Dictionary<string, Texture>();
+    readonly string texture_prefix = "Textures/";
     void Awake()
     {
         // Drink Prefab
@@ -20,17 +22,24 @@ public class CObjectPool : CSingletonMono<CObjectPool>
             var go = Instantiate(drinkPrefab).GetComponent<DrinkObject>();
             go.gameObject.SetActive(false);
             go.transform.SetParent(this.transform);
-            objectPool.Enqueue(go);
+            drinkObjPool.Enqueue(go);
         }
-
-        // Texture Collection
-        prefab_collection = Resources.Load<PrefabCollection>(collection_path);
     }
-
+    public Texture GetDrinkTexture(string path)
+    {
+        // Debug
+        //path = "cola_test1";
+        //
+        path = path.Replace(".png", "");
+        Texture tex = Resources.Load<Texture>(texture_prefix + path);
+        if (drink_textures.ContainsKey(path) == false)
+            drink_textures.Add(path, tex);
+        return drink_textures[path];
+    }
 
     public DrinkObject CreateDrinkObject(Model.Drink drink_data)
     {
-        var go = objectPool.Dequeue();
+        var go = drinkObjPool.Dequeue();
         go.Setup(drink_data);
         return go;
     }
@@ -38,7 +47,7 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     {
         go.gameObject.SetActive(false);
         go.transform.SetParent(this.transform);
-        objectPool.Enqueue(go);
+        drinkObjPool.Enqueue(go);
         return go;
     }
 }

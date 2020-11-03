@@ -8,8 +8,6 @@ using UnityEngine;
 public class SlotObject : MonoBehaviour
 {
     public Model.Slot data;
-
-    [SerializeField]
     public DrinkObject drink_object;
 
     public bool IsEmpty { get { return data.has_drink; } }
@@ -21,7 +19,7 @@ public class SlotObject : MonoBehaviour
             return new Vector3(data.row, data.column, data.depth);
         }
     }
-    
+
     public void InitializeObject()
     {
 
