@@ -6,7 +6,7 @@ using UnityEngine.UI;
 namespace DrinkDetailCanvas
 {
 
-    public class DrinkDetailCanvasControl : MonoBehaviour
+    public class DrinkDetailCanvasControl : UICanvasBase
     {
 
         /// <summary>디테일 페이지에서 정보를 보여주는 컴포넌트</summary>
@@ -26,6 +26,7 @@ namespace DrinkDetailCanvas
         {
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
             Screen.SetResolution(1440, 2960, true);
+			CCanvasManager.Instance.SetMain(this);
         }
 
 
@@ -82,6 +83,11 @@ namespace DrinkDetailCanvas
                 thumbnailImage.sprite = Sprite.Create(texture2D, rect, new Vector2(0.5f, 0.5f));
 
             }
+        }
+        public override void OnBackKey()
+        {
+            base.OnBackKey();
+            this.Close();
         }
     }
     
