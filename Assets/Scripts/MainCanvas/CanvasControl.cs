@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace test
 {
-    public class CanvasControl : MonoBehaviour
+    public class CanvasControl : UICanvasBase
     {
         public enum CanvasStates{
             numInitial = 0,
@@ -38,6 +38,7 @@ namespace test
         }
 
         void Start(){
+            CCanvasManager.Instance.SetMain(this);
             currentCanvas = CanvasStates.numInitial;
             SetCanvasState();
             checkError();
@@ -176,6 +177,11 @@ namespace test
             }
         }
 
+        public override void OnBackKey()
+        {
+            base.OnBackKey();
+            goBack();
+        }
         public void goBack(){
             switch(currentCanvas){
                 case CanvasStates.numStatusPanel :
