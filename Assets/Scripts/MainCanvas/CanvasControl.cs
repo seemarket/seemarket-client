@@ -29,16 +29,16 @@ namespace test
         public GameObject OwnerPanel;
         public GameObject StatusPanel;
         public GameObject AlertBox;
-
         public GameObject backgroundPanel;
-        
-        
+
         public StallCanvasControl stallCanvasControl;
 
         private const string notImplemented = "아직 구현되지 않았습니다.";
         private const string notInMainPanel = "현재 Main 페이지가 아닙니다.";
         private const string notInOwnerPanel = "현재 Owner 페이지가 아닙니다.";
 
+        
+        
         void Awake(){
             AlertText.enabled = false;
             Screen.sleepTimeout = SleepTimeout.NeverSleep;

@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/StallCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/StallCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DrinkCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DrinkCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/8d/0b30fd50/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/94/23b02042/WebUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,11 +74,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
       </list>
     </option>
   </component>
@@ -291,9 +291,10 @@
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
     <state width="618" height="393" key="XDebugger.FullValuePopup/0.23.1440.792/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603890788794" />
-    <state x="383" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1602339505579">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="383" y="192" width="672" height="593" key="search.everywhere.popup" timestamp="1604459638106">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
+    <state x="383" y="192" width="672" height="593" key="search.everywhere.popup/-1024.23.1024.745/0.23.1440.786@0.23.1440.786" timestamp="1604459638106" />
     <state x="383" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1602339505579" />
   </component>
   <component name="XDebuggerManager">

@@ -1,6 +1,8 @@
 using System.Collections;
+using test;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace DrinkDetailCanvas
@@ -19,7 +21,11 @@ namespace DrinkDetailCanvas
         public Text descriptionText;
         public Text etcText;
         public Button backButton;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        public Button startARButton;
+        
         private Model.Drink _drink;
 
         void Awake()
@@ -54,13 +60,25 @@ namespace DrinkDetailCanvas
             descriptionText.text = _drink.description;
             StartCoroutine(DownloadImage(_drink.thumbnail_url));
             backButton.onClick.AddListener(Close);
+            startARButton.onClick.AddListener(startAR);
         }
 
+        /// <summary>
+        /// AR을 로드한다.
+        /// </summary>
+        public void startAR()
+        {
+            if (_drink == null) { return; }
+            PlayerPrefs.SetInt("LastSelected", this._drink.id);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("HelloAR");
+        }
+        
         public void Close()
         {
-            Debug.Log("Button Click");
             this.gameObject.SetActive(false);
             this._drink = null;
+            this.thumbnailImage.sprite = null;
         }
 
         IEnumerator DownloadImage(string MediaUrl)

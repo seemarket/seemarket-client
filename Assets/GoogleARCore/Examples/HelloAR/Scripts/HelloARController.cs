@@ -18,6 +18,8 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using System;
+
 namespace GoogleARCore.Examples.HelloAR
 {
     using System.Collections.Generic;
@@ -50,7 +52,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// A prefab to place when an instant placement raycast from a user touch hits an instant
         /// placement point.
         /// </summary>
-        public GameObject InstantPlacementPrefab;
+        private GameObject InstantPlacementPrefab;
 
         /// <summary>
         /// The first-person camera being used to render the passthrough camera image (i.e. AR
@@ -61,17 +63,17 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a vertical plane.
         /// </summary>
-        public GameObject GameObjectVerticalPlanePrefab;
+        private GameObject GameObjectVerticalPlanePrefab;
 
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a horizontal plane.
         /// </summary>
-        public GameObject GameObjectHorizontalPlanePrefab;
+        private GameObject GameObjectHorizontalPlanePrefab;
 
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a feature point.
         /// </summary>
-        public GameObject GameObjectPointPrefab;
+        private GameObject GameObjectPointPrefab;
 
         /// <summary>
         /// The rotation in degrees need to apply to prefab when it is placed.
@@ -92,6 +94,17 @@ namespace GoogleARCore.Examples.HelloAR
             // Enable ARCore to target 60fps camera capture frame rate on supported devices.
             // Note, Application.targetFrameRate is ignored when QualitySettings.vSyncCount != 0.
             Application.targetFrameRate = 60;
+        }
+
+        public void Start()
+        {
+            int id = PlayerPrefs.GetInt("LastSelected");
+            Model.Drink drink = CWebData.GetDrinkModel(id);
+            DrinkObject drinkObject = CObjectPool.Instance.CreateDrinkObject(drink);
+            this.InstantPlacementPrefab = drinkObject.gameObject;
+            this.GameObjectPointPrefab = drinkObject.gameObject;
+            this.GameObjectVerticalPlanePrefab = drinkObject.gameObject;
+            this.GameObjectHorizontalPlanePrefab = drinkObject.gameObject;
         }
 
         /// <summary>
