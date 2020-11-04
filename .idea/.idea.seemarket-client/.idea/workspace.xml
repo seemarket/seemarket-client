@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/Parser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3DSlot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3DSlot.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +38,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55ADAE45-46CD-485B-A70E-2948332EBE8C/aa/8242e299/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/94/23b02042/WebUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/0b295a95/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/49acff7e/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55ADAE45-46CD-485B-A70E-2948332EBE8C/aa/8242e299/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECBAB075-47B5-431B-A8E9-EAA7B3FB8CCD/51/4de730bf/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/35/ac6d7342/NameValueCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/49acff7e/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/f8/35ada556/UriBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/4f/fae1aaae/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -69,6 +72,10 @@
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/Parser.cs" />
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
       </list>
     </option>
   </component>
@@ -96,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="46368">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="46368" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -271,10 +278,10 @@
       <screen x="0" y="23" width="1440" height="795" />
     </state>
     <state x="221" y="59" key="SettingsEditor/0.23.1440.795@0.23.1440.795" timestamp="1602336302123" />
-    <state x="-1445" y="65" width="1037" height="586" key="VCS.FileHistoryDialog" timestamp="1603887167202">
+    <state x="-1445" y="65" width="1037" height="586" key="VCS.FileHistoryDialog" timestamp="1604405449515">
       <screen x="-1920" y="-157" width="1920" height="966" />
     </state>
-    <state x="-1445" y="65" width="1037" height="586" key="VCS.FileHistoryDialog/0.23.1440.877/-1920.-157.1920.966@-1920.-157.1920.966" timestamp="1603887167202" />
+    <state x="-1445" y="65" width="1037" height="586" key="VCS.FileHistoryDialog/0.23.1440.877/-1920.-157.1920.966@-1920.-157.1920.966" timestamp="1604405449515" />
     <state width="618" height="393" key="XDebugger.FullValuePopup" timestamp="1603890788794">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
@@ -409,10 +416,10 @@
           <line>103</line>
           <properties documentPath="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" initialLine="96">
             <startOffsets>
-              <option value="2823" />
+              <option value="-1" />
             </startOffsets>
             <endOffsets>
-              <option value="2887" />
+              <option value="-1" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />

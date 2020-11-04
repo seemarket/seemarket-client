@@ -45,6 +45,7 @@ public class DrinkObject : MonoBehaviour
     //void OnMouseOver() { OnHoverFunction(); }
     void OnClickFunction()
     {
+        CObjectPool.Instance.CreateDetailCanvasControl(this.data);
         Debug.Log("Mouse click up");
         Debug.Log(m_Renderer.bounds.size.y);
         

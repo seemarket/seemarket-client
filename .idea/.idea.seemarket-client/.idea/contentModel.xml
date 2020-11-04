@@ -10,6 +10,7 @@
         <e p="GoogleARCore" t="Include">
           <e p="Editor" t="Include">
             <e p="ARCoreAndroidKeylessDependencies.template" t="Include" />
+            <e p="ARCoreAndroidKeylessDependencies.xml" t="Include" />
             <e p="ARCoreiOSDependencies.template" t="Include" />
           </e>
           <e p="Examples" t="Include">
@@ -352,6 +353,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DrinkDetailCanvas" t="Include">
+            <e p="DrinkDetailCanvasControl.cs" t="Include" />
+          </e>
+          <e p="DrinkObject.cs" t="Include" />
           <e p="Model" t="Include">
             <e p="Drink.cs" t="Include" />
             <e p="Response.cs" t="Include" />
@@ -367,8 +372,14 @@
             <e p="StallService.cs" t="Include" />
           </e>
           <e p="ShelvingTest.cs" t="Include" />
+          <e p="Singleton" t="Include">
+            <e p="CObjectPool.cs" t="Include" />
+            <e p="CSingleton.cs" t="Include" />
+          </e>
+          <e p="SlotObject.cs" t="Include" />
           <e p="TestCode.cs" t="Include" />
         </e>
+        <e p="ShelfObject.cs" t="Include" />
         <e p="Shelving.cs" t="Include" />
         <e p="SocketIO" t="Include">
           <e p="JSONObject" t="Include">
