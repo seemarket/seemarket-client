@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3DSlot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3DSlot.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,9 +69,9 @@
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
       </list>
     </option>
   </component>
@@ -306,97 +302,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>44</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="28">
-            <startOffsets>
-              <option value="1190" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1216" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>46</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="31">
-            <startOffsets>
-              <option value="1278" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1279" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>47</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="32">
-            <startOffsets>
-              <option value="1292" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1337" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>49</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="34">
-            <startOffsets>
-              <option value="1363" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1387" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="95">
-            <startOffsets>
-              <option value="2868" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2885" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>106</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="94">
-            <startOffsets>
-              <option value="2894" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2983" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Shelving.cs</url>
-          <line>108</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Shelving.cs" initialLine="96">
-            <startOffsets>
-              <option value="2939" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2971" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs</url>

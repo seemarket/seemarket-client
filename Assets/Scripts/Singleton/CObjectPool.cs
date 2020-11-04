@@ -37,7 +37,6 @@ public class CObjectPool : CSingletonMono<CObjectPool>
             drinkObjPool.Enqueue(go);
         }
     }
-<<<<<<< HEAD
     public Texture GetDrinkTexture(string path)
     {
         // Debug
@@ -50,8 +49,6 @@ public class CObjectPool : CSingletonMono<CObjectPool>
         return drink_textures[path];
     }
 
-=======
-
     public DrinkDetailCanvasControl CreateDetailCanvasControl(Model.Drink drink_data)
     {
         _detailCanvasControl.gameObject.SetActive(true);
@@ -61,8 +58,6 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     }
     
     
-    
->>>>>>> Drink 클릭 프리펩 작성
     public DrinkObject CreateDrinkObject(Model.Drink drink_data)
     {
         var go = drinkObjPool.Dequeue();
