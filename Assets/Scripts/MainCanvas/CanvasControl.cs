@@ -10,7 +10,9 @@ namespace test
             numAuthorize = 1,
             numMain = 2,
             numOwnerPanel = 3,
-            numStatusPanel = 4
+            numStatusPanel = 4,
+            // 매대를 보여주는 화
+            numStatusShowStall = 5,
         }
         private CanvasStates LastCanvas = CanvasStates.numStatusPanel;
         private CanvasStates currentCanvas = 0;
@@ -110,6 +112,15 @@ namespace test
             }
         }
 
+        /// <summary>
+        /// 슬롯의 화면으로 간다.
+        /// </summary>
+        public void goToStall()
+        {
+            currentCanvas = CanvasStates.numStatusShowStall;
+            SetCanvasState();
+        }
+
         public void switchOU(){
             accessNotImplemented();
         }
@@ -150,6 +161,14 @@ namespace test
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(true);
+                    break;
+                case CanvasStates.numStatusShowStall:
+                    this.gameObject.SetActive(false);
+                    Initial.SetActive(false);
+                    Authorize.SetActive(false);
+                    Main.SetActive(false);
+                    OwnerPanel.SetActive(false);
+                    StatusPanel.SetActive(false);
                     break;
                 default :
                     Debug.Log("default case for SetCanvasSate!");

@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CameraScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/UserInterface.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/CameraScript.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/CameraScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CameraScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/CanvasControl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/CanvasControl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/UserInterface.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/test/UserInterface.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/UserInterface.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +73,7 @@
         <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
       </list>
     </option>
   </component>
