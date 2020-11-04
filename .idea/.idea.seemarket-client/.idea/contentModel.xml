@@ -385,6 +385,9 @@
             <e p="CWebData.cs" t="Include" />
           </e>
           <e p="SlotObject.cs" t="Include" />
+          <e p="StallCanvas" t="Include">
+            <e p="StallCanvasControl.cs" t="Include" />
+          </e>
           <e p="TestCode.cs" t="Include" />
         </e>
         <e p="SocketIO" t="Include">
