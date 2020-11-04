@@ -380,9 +380,11 @@
           <e p="ShelvingTest.cs" t="Include" />
           <e p="Singleton" t="Include">
             <e p="CCameraManager.cs" t="Include" />
+            <e p="CCanvasManager.cs" t="Include" />
             <e p="CObjectPool.cs" t="Include" />
             <e p="CSingleton.cs" t="Include" />
             <e p="CWebData.cs" t="Include" />
+            <e p="UICanvasBase.cs" t="Include" />
           </e>
           <e p="SlotObject.cs" t="Include" />
           <e p="StallCanvas" t="Include">

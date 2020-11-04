@@ -315,7 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eed2766a88e46e6a0fb7ad412c5c4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 0}
+  titleText: {fileID: 1497037817652008275}
+  startSimulationButton: {fileID: 144400804517869572}
 --- !u!1 &1861082197754279085
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +328,6 @@ GameObject:
   - component: {fileID: 1861082197754279086}
   - component: {fileID: 1861082197754279080}
   - component: {fileID: 1861082197754279087}
-  - component: {fileID: 1861082197754279081}
   m_Layer: 5
   m_Name: title
   m_TagString: Untagged
@@ -392,26 +392,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1861082197754279081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861082197754279085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7956dc78a65cc4882eb5925ed9aa9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AlertText: {fileID: 0}
-  Initial: {fileID: 0}
-  init_checkText: {fileID: 0}
-  Authorize: {fileID: 0}
-  Main: {fileID: 0}
-  OwnerPanel: {fileID: 0}
-  StatusPanel: {fileID: 0}
-  AlertBox: {fileID: 0}
 --- !u!1 &5384888764864012782
 GameObject:
   m_ObjectHideFlags: 0

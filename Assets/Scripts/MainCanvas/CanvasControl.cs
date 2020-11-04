@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using StallCanvas;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace test
@@ -16,6 +17,8 @@ namespace test
         }
         private CanvasStates LastCanvas = CanvasStates.numStatusPanel;
         private CanvasStates currentCanvas = 0;
+        
+        
     
         public Text AlertText;
         public GameObject Initial;
@@ -26,6 +29,11 @@ namespace test
         public GameObject OwnerPanel;
         public GameObject StatusPanel;
         public GameObject AlertBox;
+
+        public GameObject backgroundPanel;
+        
+        
+        public StallCanvasControl stallCanvasControl;
 
         private const string notImplemented = "아직 구현되지 않았습니다.";
         private const string notInMainPanel = "현재 Main 페이지가 아닙니다.";
@@ -95,13 +103,8 @@ namespace test
         }
 
         public void goStatus(){
-            if(currentCanvas != CanvasStates.numOwnerPanel){
-                alertMessage(notInOwnerPanel);
-            }
-            else{
-                currentCanvas = CanvasStates.numStatusPanel;
-                SetCanvasState();
-            }
+            currentCanvas = CanvasStates.numStatusShowStall;
+            SetCanvasState();
         }
 
         public void goRelocation(){
@@ -164,12 +167,14 @@ namespace test
                     StatusPanel.SetActive(true);
                     break;
                 case CanvasStates.numStatusShowStall:
-                    this.gameObject.SetActive(false);
+                    Debug.Log("Status");
+                    backgroundPanel.SetActive(false);
                     Initial.SetActive(false);
                     Authorize.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(true);
                     break;
                 default :
                     Debug.Log("default case for SetCanvasSate!");
