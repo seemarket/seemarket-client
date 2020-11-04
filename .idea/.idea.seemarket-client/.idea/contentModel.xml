@@ -357,6 +357,11 @@
             <e p="DrinkDetailCanvasControl.cs" t="Include" />
           </e>
           <e p="DrinkObject.cs" t="Include" />
+          <e p="MainCanvas" t="Include">
+            <e p="CameraScript.cs" t="Include" />
+            <e p="CanvasControl.cs" t="Include" />
+            <e p="UserInterface.cs" t="Include" />
+          </e>
           <e p="Model" t="Include">
             <e p="Drink.cs" t="Include" />
             <e p="Response.cs" t="Include" />
@@ -371,16 +376,23 @@
             <e p="SlotService.cs" t="Include" />
             <e p="StallService.cs" t="Include" />
           </e>
+          <e p="ShelfObject.cs" t="Include" />
+          <e p="Shelving.cs" t="Include" />
           <e p="ShelvingTest.cs" t="Include" />
           <e p="Singleton" t="Include">
+            <e p="CCameraManager.cs" t="Include" />
+            <e p="CCanvasManager.cs" t="Include" />
             <e p="CObjectPool.cs" t="Include" />
             <e p="CSingleton.cs" t="Include" />
+            <e p="CWebData.cs" t="Include" />
+            <e p="UICanvasBase.cs" t="Include" />
           </e>
           <e p="SlotObject.cs" t="Include" />
+          <e p="StallCanvas" t="Include">
+            <e p="StallCanvasControl.cs" t="Include" />
+          </e>
           <e p="TestCode.cs" t="Include" />
         </e>
-        <e p="ShelfObject.cs" t="Include" />
-        <e p="Shelving.cs" t="Include" />
         <e p="SocketIO" t="Include">
           <e p="JSONObject" t="Include">
             <e p="Editor" t="Include">
@@ -484,10 +496,12 @@
             <e p="WebSocketStream.cs" t="Include" />
           </e>
         </e>
-        <e p="test" t="Include">
-          <e p="CameraScript.cs" t="Include" />
-          <e p="CanvasControl.cs" t="Include" />
-          <e p="UserInterface.cs" t="Include" />
+        <e p="VSCode" t="Include">
+          <e p="Plugins" t="Include">
+            <e p="Editor" t="Include">
+              <e p="VSCode.cs" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

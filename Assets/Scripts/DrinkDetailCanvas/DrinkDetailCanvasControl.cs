@@ -1,12 +1,14 @@
 using System.Collections;
+using test;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace DrinkDetailCanvas
 {
 
-    public class DrinkDetailCanvasControl : MonoBehaviour
+    public class DrinkDetailCanvasControl : UICanvasBase
     {
 
         /// <summary>디테일 페이지에서 정보를 보여주는 컴포넌트</summary>
@@ -19,13 +21,18 @@ namespace DrinkDetailCanvas
         public Text descriptionText;
         public Text etcText;
         public Button backButton;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        public Button startARButton;
+        
         private Model.Drink _drink;
 
         void Awake()
         {
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
             Screen.SetResolution(1440, 2960, true);
+			CCanvasManager.Instance.SetMain(this);
         }
 
 
@@ -53,13 +60,25 @@ namespace DrinkDetailCanvas
             descriptionText.text = _drink.description;
             StartCoroutine(DownloadImage(_drink.thumbnail_url));
             backButton.onClick.AddListener(Close);
+            startARButton.onClick.AddListener(startAR);
         }
 
+        /// <summary>
+        /// AR을 로드한다.
+        /// </summary>
+        public void startAR()
+        {
+            if (_drink == null) { return; }
+            PlayerPrefs.SetInt("LastSelected", this._drink.id);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("HelloAR");
+        }
+        
         public void Close()
         {
-            Debug.Log("Button Click");
             this.gameObject.SetActive(false);
             this._drink = null;
+            this.thumbnailImage.sprite = null;
         }
 
         IEnumerator DownloadImage(string MediaUrl)
@@ -82,6 +101,11 @@ namespace DrinkDetailCanvas
                 thumbnailImage.sprite = Sprite.Create(texture2D, rect, new Vector2(0.5f, 0.5f));
 
             }
+        }
+        public override void OnBackKey()
+        {
+            base.OnBackKey();
+            this.Close();
         }
     }
     

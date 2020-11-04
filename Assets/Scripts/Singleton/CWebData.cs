@@ -38,10 +38,15 @@ public class CWebData : CSingletonMono<CWebData>
         SocketIOComponent.Instance.On("close", HandleClose);
         SocketIOComponent.Instance.On("update", HandleSlotUpdate);
         
+    }
+    #region HANDLE CODES
+
+    public void FireSimulation()
+    {
+        
         // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
         StartCoroutine(StartSimulation());
     }
-    #region HANDLE CODES
     public void HandleGetDrinkList()
     {
         DrinkDB.Clear();
