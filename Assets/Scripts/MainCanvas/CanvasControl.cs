@@ -51,6 +51,12 @@ namespace test
             SetCanvasState();
             checkError();
             init_checkText.text = "실행전 에러 체크";
+
+            if (CCanvasManager.Instance.currentMainState == CCanvasManager.MainState.Stall)
+            {
+                this.currentCanvas = CanvasStates.numStatusShowStall;
+                SetCanvasState();
+            }
         }
 
         private void checkError(){

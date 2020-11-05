@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ARCanvas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/keyless_authentication.aar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +80,12 @@
         <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602336273325</updated>
       <workItem from="1602336278846" duration="7171000" />
-      <workItem from="1604568917404" duration="1204000" />
+      <workItem from="1604568917404" duration="3281000" />
     </task>
     <servers />
   </component>

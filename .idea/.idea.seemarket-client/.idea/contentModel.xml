@@ -10,7 +10,6 @@
         <e p="GoogleARCore" t="Include">
           <e p="Editor" t="Include">
             <e p="ARCoreAndroidKeylessDependencies.template" t="Include" />
-            <e p="ARCoreAndroidKeylessDependencies.xml" t="Include" />
             <e p="ARCoreiOSDependencies.template" t="Include" />
           </e>
           <e p="Examples" t="Include">
@@ -353,6 +352,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="ArCanvas" t="Include">
+            <e p="ARCanvasControl.cs" t="Include" />
+          </e>
           <e p="DrinkDetailCanvas" t="Include">
             <e p="DrinkDetailCanvasControl.cs" t="Include" />
           </e>
