@@ -52,6 +52,7 @@ namespace test
             checkError();
             init_checkText.text = "실행전 에러 체크";
 
+            stallCanvasControl.parent = this;
             if (CCanvasManager.Instance.currentMainState == CCanvasManager.MainState.Stall)
             {
                 this.currentCanvas = CanvasStates.numStatusShowStall;
@@ -135,45 +136,63 @@ namespace test
             accessNotImplemented();
         }
 
+
+        /// <summary>
+        /// 뒤로가기 버튼을 눌러서 돌아갔을 때 처리
+        /// </summary>
+        public void GoToOwner()
+        {
+            currentCanvas = CanvasStates.numOwnerPanel;
+            SetCanvasState();
+        }
         public void SetCanvasState(){
             switch (currentCanvas){
-                case CanvasStates.numInitial : 
+                case CanvasStates.numInitial :
+                    backgroundPanel.SetActive(true);
                     Initial.SetActive(true);
                     Authorize.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numAuthorize :
+                    backgroundPanel.SetActive(true);
                     Initial.SetActive(false);
                     Authorize.SetActive(true);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numMain :
+                    backgroundPanel.SetActive(true);
                     Initial.SetActive(false);
                     Authorize.SetActive(false);
                     Main.SetActive(true);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numOwnerPanel :
+                    backgroundPanel.SetActive(true);
                     Initial.SetActive(false);
                     Authorize.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(true);
                     StatusPanel.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numStatusPanel :
+                    backgroundPanel.SetActive(true);
                     Initial.SetActive(false);
                     Authorize.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(true);
+                    stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numStatusShowStall:
-                    Debug.Log("Status");
                     backgroundPanel.SetActive(false);
                     Initial.SetActive(false);
                     Authorize.SetActive(false);
