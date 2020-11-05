@@ -30,7 +30,7 @@ public class ShelfObject : MonoBehaviour
             CObjectPool.Instance.main = this;
     }
     [ContextMenu("Force Reset&Init")]
-    void forceInitialize()
+    public void forceInitialize()
     {
         Initialize(CWebData.Instance.SlotDB.Values.ToList());
     }
@@ -138,6 +138,27 @@ public class ShelfObject : MonoBehaviour
         return slotData.FindAll(_ => _.data.row == row && _.data.column == col);
     }
 
+    /// <summary>
+    /// 모든 값들 다 처리해서 정상적으로 보이도록 하기
+    /// </summary>
+    public void InitializeDrinks()
+    {
+        foreach (Model.Slot s in CWebData.Instance.SlotDB.Values)
+        {
+            if (s.has_drink)
+            {
+                var go = CObjectPool.Instance.CreateDrinkObject(CWebData.GetDrinkModel(s.drink_id));
+                go.transform.SetParent(row_transforms[s.row]);
+                go.transform.localRotation = Quaternion.identity;
+                go.gameObject.SetActive(true);
+                go.transform.localPosition = new Vector3(
+                    s.column * offset_x,
+                    0f,
+                    s.depth * offset_z);
+            }
+        }
+    }
+    
     public List<Transform> row_transforms;
 
     [Range(0, 3)]

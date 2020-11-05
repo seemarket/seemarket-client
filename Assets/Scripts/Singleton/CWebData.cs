@@ -15,6 +15,10 @@ public class CWebData : CSingletonMono<CWebData>
 
     public Dictionary<int, Drink> DrinkDB = new Dictionary<int, Drink>();
     public Dictionary<int, Slot> SlotDB = new Dictionary<int, Slot>();
+
+
+    private bool didFetchDrink = false;
+    private bool didFetchSlot = false;
     
     public static Drink GetDrinkModel(int id)
     {
@@ -58,6 +62,9 @@ public class CWebData : CSingletonMono<CWebData>
                 Debug.Log(string.Format("음료:{0}/{1}",
                     d.id, d.title));
             }
+            
+            this.didFetchDrink = true;
+            HandleStallInit();
         }));
     }
     public void HandleGetSlotList()
@@ -71,8 +78,21 @@ public class CWebData : CSingletonMono<CWebData>
                 Debug.Log(string.Format("슬롯:[{0}/{1}/{2}] {3}",
                     s.row, s.column, s.depth, s.has_drink));
             }
+
+            this.didFetchSlot = true;
+            HandleStallInit();
         }));
     }
+
+    private void HandleStallInit()
+    {
+        if (didFetchDrink && didFetchSlot)
+        {
+            CObjectPool.Instance.main.InitializeDrinks();
+        }
+        
+    }
+    
     // 1초마다 재고 여부가 바뀌는 것을 알리는 코드를 수신합니다.
     public void HandleSlotUpdate(SocketIOEvent e)
     {
