@@ -54,8 +54,8 @@ namespace DrinkDetailCanvas
             }
 
             titleText.text = _drink.title;
-            rateText.text = "5점"; // TODO
-            priceText.text = _drink.price;
+            rateText.text = "평점 5점"; // TODO
+            priceText.text = "가격" + _drink.price + "원";
             incomeText.text = "5분 후 입고"; // TODO
             descriptionText.text = _drink.description;
             StartCoroutine(DownloadImage(_drink.thumbnail_url));

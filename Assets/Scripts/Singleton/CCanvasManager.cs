@@ -35,14 +35,10 @@ public class CCanvasManager : CSingletonMono<CCanvasManager>
      	if (Application.platform == RuntimePlatform.Android || 
          	Application.platform == RuntimePlatform.WindowsEditor)
         {
-            Debug.Log("AAA");
             if (Input.GetKey(KeyCode.Escape)){    
-        Debug.Log("BB");	
             
             	if (main_focus != null){
-        Debug.Log("CC");
-
-	        		main_focus.OnBackKey();
+                    main_focus.OnBackKey();
                 }
             }
         }

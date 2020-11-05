@@ -1075,6 +1075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StallCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1861082196228947032, guid: 70ddb3b5c0745474886410fc8bb0e8a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5455588064820542488, guid: 70ddb3b5c0745474886410fc8bb0e8a3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 40.92383

@@ -52,7 +52,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// A prefab to place when an instant placement raycast from a user touch hits an instant
         /// placement point.
         /// </summary>
-        private GameObject InstantPlacementPrefab;
+        public GameObject InstantPlacementPrefab;
 
         /// <summary>
         /// The first-person camera being used to render the passthrough camera image (i.e. AR
@@ -63,17 +63,17 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a vertical plane.
         /// </summary>
-        private GameObject GameObjectVerticalPlanePrefab;
+        public GameObject GameObjectVerticalPlanePrefab;
 
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a horizontal plane.
         /// </summary>
-        private GameObject GameObjectHorizontalPlanePrefab;
+        public GameObject GameObjectHorizontalPlanePrefab;
 
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a feature point.
         /// </summary>
-        private GameObject GameObjectPointPrefab;
+        public GameObject GameObjectPointPrefab;
 
         /// <summary>
         /// The rotation in degrees need to apply to prefab when it is placed.
@@ -100,6 +100,7 @@ namespace GoogleARCore.Examples.HelloAR
         {
             int id = PlayerPrefs.GetInt("LastSelected");
             Model.Drink drink = CWebData.GetDrinkModel(id);
+            
             DrinkObject drinkObject = CObjectPool.Instance.CreateDrinkObject(drink);
             this.InstantPlacementPrefab = drinkObject.gameObject;
             this.GameObjectPointPrefab = drinkObject.gameObject;
