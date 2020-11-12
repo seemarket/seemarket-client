@@ -355,6 +355,10 @@
           <e p="ArCanvas" t="Include">
             <e p="ARCanvasControl.cs" t="Include" />
           </e>
+          <e p="ARImage" t="Include">
+            <e p="ARImageControl.cs" t="Include" />
+            <e p="ARImageLinker.cs" t="Include" />
+          </e>
           <e p="DrinkDetailCanvas" t="Include">
             <e p="DrinkDetailCanvasControl.cs" t="Include" />
           </e>
