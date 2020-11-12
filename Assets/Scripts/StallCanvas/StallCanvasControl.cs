@@ -1,4 +1,5 @@
 using System;
+using test;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,11 +15,18 @@ namespace StallCanvas
         /// 시뮬레이션 시작 버튼
         /// </summary>
         public Button startSimulationButton;
-        
+
+        /// <summary>
+        /// 뒤로 가기 버
+        /// </summary>
+        public Button backButton;
+
+        public CanvasControl parent;
 
 
         void Start()
         {
+            backButton.onClick.AddListener(goToBack);
             startSimulationButton.onClick.AddListener(StartSimulation);
         }
 
@@ -33,11 +41,17 @@ namespace StallCanvas
             CWebData.Instance.FireSimulation();
         }
 
+        /// <summary>
+        /// 뒤로 가는 버튼
+        /// </summary>
+        private void goToBack()
+        {
+            parent.GoToOwner();
+        }
+        
         public override void OnBackKey()
         {
-            
-            base.OnBackKey();
-            
+            goToBack();
         }
     }
 }

@@ -15,6 +15,15 @@ public class CCanvasManager : CSingletonMono<CCanvasManager>
     public UICanvasBase main_focus;
     Stack<UICanvasBase> canvas_stack = new Stack<UICanvasBase>();
 
+    
+    public enum MainState
+    {
+        Stall, Main
+    }
+    
+    public MainState currentMainState = MainState.Main;
+    
+    
     void Awake()
     {
 		canvas_list = new List<UICanvasBase>();
@@ -35,14 +44,10 @@ public class CCanvasManager : CSingletonMono<CCanvasManager>
      	if (Application.platform == RuntimePlatform.Android || 
          	Application.platform == RuntimePlatform.WindowsEditor)
         {
-            Debug.Log("AAA");
             if (Input.GetKey(KeyCode.Escape)){    
-        Debug.Log("BB");	
             
             	if (main_focus != null){
-        Debug.Log("CC");
-
-	        		main_focus.OnBackKey();
+                    main_focus.OnBackKey();
                 }
             }
         }
