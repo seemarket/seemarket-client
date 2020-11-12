@@ -18,6 +18,8 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using DefaultNamespace.ARImage;
+
 namespace GoogleARCore.Examples.AugmentedImage
 {
     using System.Collections.Generic;
@@ -55,6 +57,8 @@ namespace GoogleARCore.Examples.AugmentedImage
 
         private List<AugmentedImage> _tempAugmentedImages = new List<AugmentedImage>();
 
+        public ARImageControl imageControl;
+        
         /// <summary>
         /// The Unity Awake() method.
         /// </summary>
@@ -104,11 +108,14 @@ namespace GoogleARCore.Examples.AugmentedImage
                         AugmentedImageVisualizerPrefab, anchor.transform);
                     visualizer.Image = image;
                     _visualizers.Add(image.DatabaseIndex, visualizer);
+                    imageControl.gameObject.SetActive(true);
+                    imageControl.setUpId(image.Name);
                 }
                 else if (image.TrackingState == TrackingState.Stopped && visualizer != null)
                 {
                     _visualizers.Remove(image.DatabaseIndex);
                     GameObject.Destroy(visualizer.gameObject);
+                    imageControl.gameObject.SetActive(false);
                 }
             }
 
