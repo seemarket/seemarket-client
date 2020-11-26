@@ -9,6 +9,8 @@ public class DrinkObject : MonoBehaviour
 
     readonly float offset_height = 0.0784f;
     readonly float offset_rotation = 200f;
+
+    public bool isClickable = true;
 //1.7031
 //1.2655
 //0.8296
@@ -45,10 +47,12 @@ public class DrinkObject : MonoBehaviour
     //void OnMouseOver() { OnHoverFunction(); }
     void OnClickFunction()
     {
-        CObjectPool.Instance.CreateDetailCanvasControl(this.data);
-        Debug.Log("Mouse click up");
-        Debug.Log(m_Renderer.bounds.size.y);
-        
+        if (isClickable)
+        {
+            CObjectPool.Instance.CreateDetailCanvasControl(this.data);
+            Debug.Log("Mouse click up");
+            Debug.Log(m_Renderer.bounds.size.y);
+        }
     }
     void OnHoverFunction()
     {
