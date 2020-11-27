@@ -365,7 +365,11 @@
             <e p="UserInterface.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
-            <e p="Drink.cs" t="Include" />
+            <e p="CreateCommand.cs" t="Include" />
+            <e p="Define.cs" t="Include" />
+            <e p="DeleteCommand.cs" t="Include" />
+            <e p="MoveCommand.cs" t="Include" />
+            <e p="Product.cs" t="Include" />
             <e p="Response.cs" t="Include" />
             <e p="Slot.cs" t="Include" />
             <e p="SlotUpdate.cs" t="Include" />

@@ -10,16 +10,22 @@ namespace Service
 
 
         [Serializable]
-        private class SlotListResponse
+        public class SlotListResponse
         {
             public Slot[] slot_list;
         }
 
 
         [Serializable]
-        private class SlotResponse
+        public class SlotResponse
         {
             public Slot slot;
+        }
+        
+        [Serializable]
+        public class SlotDeleteResponse
+        {
+            public int slot_id;
         }
 
         public IEnumerator GETSlotList(Action<Slot[]> callback)

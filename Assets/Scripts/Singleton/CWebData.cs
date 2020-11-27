@@ -42,6 +42,11 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         SocketIOComponent.Instance.On("close", HandleClose);
         SocketIOComponent.Instance.On("update", HandleSlotUpdate);
         
+        // 시뮬레이션 결과를 수신함.
+        SocketIOComponent.Instance.On("reset_result", HandleResetSimulation);
+        SocketIOComponent.Instance.On("create_result", HandleCreateProduct);
+        SocketIOComponent.Instance.On("delete_result", HandleDeleteProduct);
+        SocketIOComponent.Instance.On("move_result", HandleMoveProduct);
     }
     #region HANDLE CODES
 
@@ -52,6 +57,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         StartCoroutine(StartSimulation());
     }
     public void HandleGetProductList()
+
     {
         ProductDB.Clear();
         StartCoroutine(_drinkService.GETDrinkList(o => {
@@ -115,15 +121,131 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
             SlotDB[update.updated_slot_info.id] = update.updated_slot_info;
         }
     }
-
+    
     private IEnumerator StartSimulation()
     {
         // wait 1 seconds and continue
         yield return new WaitForSeconds(1);
 		
-        SocketIOComponent.Instance.Emit("start_simulation");
+        //SocketIOComponent.Instance.Emit("start_simulation");
+        //ResetSimulation();
+        
+        /**
+        CreateCommand createCommand = new CreateCommand();
+        createCommand.product_id = 1;
+        createCommand.row = 1.45;
+        createCommand.depth = 1.5677;
+        createCommand.column = 1.6677;
+        CreateProduct(createCommand);
+        
+        **/
+        
+        /**
+        MoveCommand moveCommand = new MoveCommand();
+        moveCommand.slot_id = 1470;
+        moveCommand.row = 1111.45;
+        moveCommand.depth = 111.5677;
+        moveCommand.column = 111.6677;
+        MoveProduct(moveCommand);
+        **/
+        
+        DeleteCommand deleteCommand = new DeleteCommand();
+        deleteCommand.slot_id = 1470;
+        DeleteProduct(deleteCommand);
     }
 
+    /// <summary>
+    /// 초기화하고 배치를 원래대로 되돌린다.
+    /// </summary>
+    private void ResetSimulation()
+    {
+        SocketIOComponent.Instance.Emit("reset_simulation");
+    }
+    
+    /// <summary>
+    /// 초기화 후 결과를 통지받는다.
+    /// </summary>
+    public void HandleResetSimulation(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Handle Reset received: " + e.name + " " + e.data);
+        string rawString = e.data.ToString();
+        Response<SlotService.SlotListResponse> value = JsonUtility.FromJson<Response<SlotService.SlotListResponse>>(rawString);
+        
+        Debug.Log("simulation result" + rawString);
+    }
+    
+    
+    /// <summary>
+    /// 상품을 매대에 조작하여 추가한다.
+    /// </summary>
+    private void CreateProduct(CreateCommand createCommand)
+    {
+        JSONObject request = new JSONObject(
+            JsonUtility.ToJson(createCommand));
+        SocketIOComponent.Instance.Emit("create_product", request);
+    }
+
+    /// <summary>
+    /// 초기화 후 결과를 통지받는다.
+    /// </summary>
+    public void HandleCreateProduct(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Handle create received: " + e.name + " " + e.data);
+        string rawString = e.data.ToString();
+        Response<SlotService.SlotResponse> value = JsonUtility.FromJson<Response<SlotService.SlotResponse>>(rawString);
+        
+        Debug.Log("create result" + rawString);
+    }
+
+    
+    /// <summary>
+    /// 상품을 매대에 조작하여 이동한다.
+    /// </summary>
+    private void MoveProduct(MoveCommand moveCommand)
+    {
+        JSONObject request = new JSONObject(
+            JsonUtility.ToJson(moveCommand));
+        SocketIOComponent.Instance.Emit("move_product", request);
+    }
+
+    
+    /// <summary>
+    /// 초기화 후 결과를 통지받는다.
+    /// </summary>
+    public void HandleMoveProduct(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Handle move received: " + e.name + " " + e.data);
+        string rawString = e.data.ToString();
+        Response<SlotService.SlotResponse> value = JsonUtility.FromJson<Response<SlotService.SlotResponse>>(rawString);
+        
+        Debug.Log("move result" + rawString);
+    }
+
+    
+    /// <summary>
+    /// 상품을 매대에 조작하여 제거한다.
+    /// </summary>
+    private void DeleteProduct(DeleteCommand deleteCommand)
+    {
+        JSONObject request = new JSONObject(
+            JsonUtility.ToJson(deleteCommand));
+        SocketIOComponent.Instance.Emit("delete_product", request);
+    }
+    
+    
+    
+    /// <summary>
+    /// 초기화 후 결과를 통지받는다.
+    /// </summary>
+    public void HandleDeleteProduct(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Handle delete received: " + e.name + " " + e.data);
+        string rawString = e.data.ToString();
+        Response<SlotService.SlotDeleteResponse> value =  JsonUtility.FromJson<Response<SlotService.SlotDeleteResponse>>(rawString);
+        
+        Debug.Log("delete result" + rawString);
+    }
+    
     public void HandleOpen(SocketIOEvent e)
     {
         Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
