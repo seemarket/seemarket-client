@@ -136,7 +136,7 @@ public class Shelving : MonoBehaviour
     public void TestRun2()
     {
         StartCoroutine(_drinkService.GETDrinkList(o => {
-            foreach (Drink d in o)
+            foreach (Product d in o)
             {
                 Debug.Log(d.title.ToString());
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DrinkDetailCanvas;
 using UnityEngine;
+using Model.Define;
 
 public class CObjectPool : CSingletonMono<CObjectPool>
 {
@@ -13,13 +14,32 @@ public class CObjectPool : CSingletonMono<CObjectPool>
         = new Dictionary<string, Texture>();
     readonly string texture_prefix = "Textures/";
     private DrinkDetailCanvasControl _detailCanvasControl;
+
+    public Dictionary<ProductType, Texture> textureCache = new Dictionary<ProductType, Texture>();
+    public Dictionary<ProductType, MeshRenderer> fbxCache = new Dictionary<ProductType, MeshRenderer>();
+    
+    public void InitializeFBX()
+    {
+        if (fbxCache != null && fbxCache.Count > 0)
+            Debug.LogWarning("[fbx 초기화가 되었습니다");
+        fbxCache.Clear();
+        fbxCache.Add(ProductType.CEREAL, Resources.Load<MeshRenderer>("FBX/cereal"));
+        fbxCache.Add(ProductType.SANDWICH, Resources.Load<MeshRenderer>("FBX/sandwich"));
+        fbxCache.Add(ProductType.DRINK, Resources.Load<MeshRenderer>("FBX/drink"));
+        fbxCache.Add(ProductType.SNACK, Resources.Load<MeshRenderer>("FBX/snack"));
+    }
+    void AddFBXCache(ProductType type, string path){
+        fbxCache.Add(type, Resources.Load<MeshRenderer>(path));
+    }
+
     void Awake()
     {
+        InitializeFBX();
+
         // Drink Prefab
         if (drinkPrefab == null)
         {
             drinkPrefab = Resources.Load<DrinkObject>("DrinkPrefab");
-         
         }
        
         if (_detailCanvasControl == null)
@@ -49,7 +69,7 @@ public class CObjectPool : CSingletonMono<CObjectPool>
         return drink_textures[path];
     }
 
-    public DrinkDetailCanvasControl CreateDetailCanvasControl(Model.Drink drink_data)
+    public DrinkDetailCanvasControl CreateDetailCanvasControl(Model.Product drink_data)
     {
         _detailCanvasControl.gameObject.SetActive(true);
         _detailCanvasControl.setDrink(drink_data);
@@ -57,8 +77,12 @@ public class CObjectPool : CSingletonMono<CObjectPool>
         return _detailCanvasControl;
     }
     
+    // public ProductObject CreateObject(Model.Product data){
+    //     var go = data.type;
+    //     return null;
+    // }
     
-    public DrinkObject CreateDrinkObject(Model.Drink drink_data)
+    public DrinkObject CreateDrinkObject(Model.Product drink_data)
     {
         var go = drinkObjPool.Dequeue();
         go.Setup(drink_data);

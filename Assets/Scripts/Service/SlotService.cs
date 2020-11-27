@@ -26,7 +26,7 @@ namespace Service
         {
             string endPoint = $"slot/";
             Action<SlotListResponse> responseCallback = o => { callback(o.slot_list); };
-
+            
             return _networkService.Get<SlotListResponse>(endPoint, responseCallback);
         }
 

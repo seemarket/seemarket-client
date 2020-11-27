@@ -32,7 +32,7 @@ public class ShelfObject : MonoBehaviour
     [ContextMenu("Force Reset&Init")]
     public void forceInitialize()
     {
-        Initialize(CWebData.Instance.SlotDB.Values.ToList());
+        Initialize(CLocalDatabase.Instance.SlotDB.Values.ToList());
     }
     
     // 모든 곳은 슬롯이 1순위이다.
@@ -63,7 +63,7 @@ public class ShelfObject : MonoBehaviour
 
     public DrinkObject AddDrinkObject(int drinkID, int row, int col, int depth)
     {
-        DrinkObject go = CObjectPool.Instance.CreateDrinkObject(CWebData.GetDrinkModel(drinkID));
+        DrinkObject go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(drinkID));
         go.transform.SetParent(row_transforms[row]);
         go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
@@ -143,11 +143,11 @@ public class ShelfObject : MonoBehaviour
     /// </summary>
     public void InitializeDrinks()
     {
-        foreach (Model.Slot s in CWebData.Instance.SlotDB.Values)
+        foreach (Model.Slot s in CLocalDatabase.Instance.SlotDB.Values)
         {
             if (s.has_drink)
             {
-                var go = CObjectPool.Instance.CreateDrinkObject(CWebData.GetDrinkModel(s.drink_id));
+                var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
                 go.transform.SetParent(row_transforms[s.row]);
                 go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
@@ -171,11 +171,11 @@ public class ShelfObject : MonoBehaviour
     [ContextMenu("Drink setup test")]
     public void Test()
     {
-        foreach (Model.Slot s in CWebData.Instance.SlotDB.Values)
+        foreach (Model.Slot s in CLocalDatabase.Instance.SlotDB.Values)
         {
             if (s.has_drink)
             {
-                var go = CObjectPool.Instance.CreateDrinkObject(CWebData.GetDrinkModel(s.drink_id));
+                var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
                 go.transform.SetParent(row_transforms[s.row]);
                 go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);

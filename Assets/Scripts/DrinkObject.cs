@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Model;
 
 [RequireComponent(typeof(MeshRenderer), typeof(Collider))]
 public class DrinkObject : MonoBehaviour
@@ -13,12 +14,16 @@ public class DrinkObject : MonoBehaviour
 //1.2655
 //0.8296
 //-0.44 , 0.391
-    public Model.Drink data;
-    Renderer m_Renderer;
+    public Product data;
+    public Renderer m_Renderer;
 
     void Awake()
     {
         m_Renderer = this.GetComponent<Renderer>();
+    }
+    public void SetFBX()
+    {
+        //m_Renderer = 
     }
     public void SetTexture(Texture tex)
     {
@@ -26,9 +31,9 @@ public class DrinkObject : MonoBehaviour
     }
 
     ///<summary>
-    // 오브젝트 세팅 시, Drink로 이닛을 생성해야한다.
+    // 오브젝트 세팅 시, Product로 이닛을 생성해야한다.
     ///</summary>
-    public void Setup(Model.Drink drink_data)
+    public void Setup(Model.Product drink_data)
     {
         this.data = drink_data;
         this.SetTexture(CObjectPool.Instance.GetDrinkTexture(drink_data.prefab_url));
@@ -48,7 +53,6 @@ public class DrinkObject : MonoBehaviour
         CObjectPool.Instance.CreateDetailCanvasControl(this.data);
         Debug.Log("Mouse click up");
         Debug.Log(m_Renderer.bounds.size.y);
-        
     }
     void OnHoverFunction()
     {

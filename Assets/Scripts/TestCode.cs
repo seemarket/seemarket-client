@@ -2,6 +2,7 @@
 using Model;
 using Service;
 using UnityEngine;
+using System.Text;
 
 public class TestCode : MonoBehaviour
 {
@@ -11,9 +12,17 @@ public class TestCode : MonoBehaviour
 
     void Start()
     {
-        testStallService();
-        testDrinkService();
-        testSlotService();
+        // testStallService();
+        // testDrinkService();
+        // testSlotService();
+        StringBuilder blder = new StringBuilder();
+        var list = this.GetComponentsInChildren<MeshRenderer>();
+        blder.AppendLine("[zero pos]");
+        foreach (var i in list)
+        {
+            blder.AppendFormat("{0}\t{1}\t{2}\t{3}\n", i.gameObject.name, i.transform.position.x, i.transform.position.y, i.transform.position.z );
+        }
+        Debug.Log(blder.ToString());
     }
 
     void testStallService()
@@ -26,7 +35,7 @@ public class TestCode : MonoBehaviour
     {
         StartCoroutine(_drinkService.GETDrinkList(o =>
         {
-            foreach (Drink drink in o)
+            foreach (Product drink in o)
             {
                 Debug.Log(drink.description);
             }

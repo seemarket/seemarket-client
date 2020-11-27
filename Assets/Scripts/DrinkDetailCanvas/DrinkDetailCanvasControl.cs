@@ -26,7 +26,7 @@ namespace DrinkDetailCanvas
         /// </summary>
         public Button startARButton;
         
-        private Model.Drink _drink;
+        private Model.Product _drink;
 
         void Awake()
         {
@@ -41,7 +41,7 @@ namespace DrinkDetailCanvas
             SetCanvasState();
         }
 
-        public void setDrink(Model.Drink drink)
+        public void setDrink(Model.Product drink)
         {
             this._drink = drink;
         }

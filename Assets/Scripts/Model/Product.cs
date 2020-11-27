@@ -3,7 +3,7 @@ using System;
 namespace Model
 {
     [Serializable]
-    public class Drink
+    public class Product
     {
         public int id;
         public string title;
@@ -12,6 +12,5 @@ namespace Model
         public string description;
         public string price;
         public string thumbnail_url;
-
     }
 }

@@ -10,28 +10,28 @@ namespace Service
 
 
         [Serializable]
-        private class DrinkListResponse
+        private class ProductListResponse
         {
-            public Drink[] drink_list;
+            public Product[] product_list;
         }
 
 
         [Serializable]
         private class DrinkResponse
         {
-            public Drink drink;
+            public Product drink;
         }
 
-        public IEnumerator GETDrinkList(Action<Drink[]> callback)
+        public IEnumerator GETDrinkList(Action<Product[]> callback)
         {
             string endPoint = $"drink/";
-            Action<DrinkListResponse> responseCallback = o => { callback(o.drink_list); };
+            Action<ProductListResponse> responseCallback = o => { callback(o.product_list); };
 
-            return _networkService.Get<DrinkListResponse>(endPoint, responseCallback);
+            return _networkService.Get<ProductListResponse>(endPoint, responseCallback);
         }
 
 
-        public IEnumerator GETDrink(int id, Action<Drink> callback)
+        public IEnumerator GETDrink(int id, Action<Product> callback)
         {
             string endPoint = $"drink/{id}/";
             Action<DrinkResponse> responseCallback = o => { callback(o.drink); };

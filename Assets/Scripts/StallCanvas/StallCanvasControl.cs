@@ -38,7 +38,7 @@ namespace StallCanvas
 
         private void StartSimulation()
         {
-            CWebData.Instance.FireSimulation();
+            CLocalDatabase.Instance.FireSimulation();
         }
 
         /// <summary>

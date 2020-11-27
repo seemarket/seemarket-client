@@ -99,7 +99,7 @@ namespace GoogleARCore.Examples.HelloAR
         public void Start()
         {
             int id = PlayerPrefs.GetInt("LastSelected");
-            Model.Drink drink = CWebData.GetDrinkModel(id);
+            Model.Product drink = CLocalDatabase.GetProductInfo(id);
             
             DrinkObject drinkObject = CObjectPool.Instance.CreateDrinkObject(drink);
             this.InstantPlacementPrefab = drinkObject.gameObject;

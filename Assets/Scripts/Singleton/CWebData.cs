@@ -7,23 +7,23 @@ using SocketIO;
 using Unity.Profiling;
 using UnityEngine;
 
-public class CWebData : CSingletonMono<CWebData>
+public class CLocalDatabase : CSingletonMono<CLocalDatabase>
 {
     DrinkService _drinkService = new DrinkService();
     SlotService _slotService = new SlotService();
     StallService _stallService = new StallService();
 
-    public Dictionary<int, Drink> DrinkDB = new Dictionary<int, Drink>();
+    public Dictionary<int, Product> ProductDB = new Dictionary<int, Product>();
     public Dictionary<int, Slot> SlotDB = new Dictionary<int, Slot>();
 
 
     private bool didFetchDrink = false;
     private bool didFetchSlot = false;
     
-    public static Drink GetDrinkModel(int id)
+    public static Product GetProductInfo(int id)
     {
-        return Instance.DrinkDB.ContainsKey(id)
-            ? Instance.DrinkDB[id] : null;
+        return Instance.ProductDB.ContainsKey(id)
+            ? Instance.ProductDB[id] : null;
     }
 
     private string socketURL =
@@ -32,7 +32,7 @@ public class CWebData : CSingletonMono<CWebData>
     void Start()
     {
         // 시작 시 음료의 목록을 서버에서 받아온다.
-        HandleGetDrinkList();
+        HandleGetProductList();
         HandleGetSlotList();
         
         // 시작 시 현재 매장의 상황.
@@ -51,14 +51,14 @@ public class CWebData : CSingletonMono<CWebData>
         // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
         StartCoroutine(StartSimulation());
     }
-    public void HandleGetDrinkList()
+    public void HandleGetProductList()
     {
-        DrinkDB.Clear();
+        ProductDB.Clear();
         StartCoroutine(_drinkService.GETDrinkList(o => {
             Debug.Log("++++음료수가 업데이트 되었습니다.+++++");
-            foreach (Drink d in o)
+            foreach (Product d in o)
             {
-                DrinkDB.Add(d.id, d);
+                ProductDB.Add(d.id, d);
                 Debug.Log(string.Format("음료:{0}/{1}",
                     d.id, d.title));
             }
@@ -113,7 +113,6 @@ public class CWebData : CSingletonMono<CWebData>
         if (SlotDB.ContainsKey(update.updated_slot_info.id))
         {
             SlotDB[update.updated_slot_info.id] = update.updated_slot_info;
-
         }
     }
 
