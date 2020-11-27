@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/CreateCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/CreateCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/DeleteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/DeleteCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/MoveCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/MoveCommand.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +70,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/StallService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestCode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/DrinkService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/NetworkService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Slot.cs" />
         <option value="$PROJECT_DIR$/Assets/SocketIO/WebsocketSharp/AssemblyInfo.cs" />
@@ -87,9 +88,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/DeleteCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/CreateCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
       </list>
     </option>
   </component>
@@ -117,10 +122,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10122">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1875">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10122" />
+      <option name="pid" value="1875" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -141,6 +146,8 @@
       <updated>1602336273325</updated>
       <workItem from="1602336278846" duration="7171000" />
       <workItem from="1604568917404" duration="9082000" />
+      <workItem from="1606468794985" duration="2154000" />
+      <workItem from="1606471003561" duration="653000" />
     </task>
     <servers />
   </component>
@@ -329,10 +336,10 @@
           <line>29</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" initialLine="29">
             <startOffsets>
-              <option value="669" />
+              <option value="791" />
             </startOffsets>
             <endOffsets>
-              <option value="670" />
+              <option value="792" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
@@ -430,16 +437,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs</url>
-          <line>90</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" initialLine="90">
+          <line>132</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" initialLine="132">
             <startOffsets>
-              <option value="2602" />
+              <option value="3995" />
             </startOffsets>
             <endOffsets>
-              <option value="2647" />
+              <option value="4013" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs</url>
+          <line>140</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" initialLine="140">
+            <startOffsets>
+              <option value="4136" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4188" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs</url>
+          <line>148</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" initialLine="148">
+            <startOffsets>
+              <option value="4331" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4403" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
