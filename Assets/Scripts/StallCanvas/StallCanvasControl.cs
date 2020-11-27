@@ -46,7 +46,7 @@ namespace StallCanvas
         /// </summary>
         private void goToBack()
         {
-            parent.GoToOwner();
+            parent.goOwner();
         }
         
         public override void OnBackKey()
