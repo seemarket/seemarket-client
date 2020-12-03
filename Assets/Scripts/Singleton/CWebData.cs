@@ -47,6 +47,8 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         SocketIOComponent.Instance.On("create_result", HandleCreateProduct);
         SocketIOComponent.Instance.On("delete_result", HandleDeleteProduct);
         SocketIOComponent.Instance.On("move_result", HandleMoveProduct);
+        
+        
     }
     #region HANDLE CODES
 
@@ -54,7 +56,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     {
         
         // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
-        StartCoroutine(StartSimulation());
+        //  StartCoroutine(StartSimulation());
     }
     public void HandleGetProductList()
 

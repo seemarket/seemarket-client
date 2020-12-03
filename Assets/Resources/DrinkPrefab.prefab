@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728de6dc3d9b9f045b81008498fc6ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: []
   data:
     id: 0
     title: 
@@ -103,7 +104,13 @@ MonoBehaviour:
     description: 
     price: 
     thumbnail_url: 
-  _setter: {fileID: 0}
+    product_type: 
+  m_Renderer: {fileID: 0}
+  m_MeshFilter: {fileID: 0}
+  snackMesh: {fileID: 878951038603269014, guid: a6b84dc239684b447bdb804563035923, type: 3}
+  cerealMesh: {fileID: -8901446020298076076, guid: b91367f2d0003bc48b15eb0108edd949, type: 3}
+  sandwichMesh: {fileID: -6328446071056725035, guid: d0258a16baab26e43908624e77ee41b3, type: 3}
+  drinkMesh: {fileID: 0}
 --- !u!65 &2495666436203992426
 BoxCollider:
   m_ObjectHideFlags: 0

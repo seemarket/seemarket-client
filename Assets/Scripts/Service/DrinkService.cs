@@ -12,7 +12,7 @@ namespace Service
         [Serializable]
         private class ProductListResponse
         {
-            public Product[] product_list;
+            public Product[] drink_list;
         }
 
 
@@ -25,7 +25,7 @@ namespace Service
         public IEnumerator GETDrinkList(Action<Product[]> callback)
         {
             string endPoint = $"drink/";
-            Action<ProductListResponse> responseCallback = o => { callback(o.product_list); };
+            Action<ProductListResponse> responseCallback = o => { callback(o.drink_list); };
 
             return _networkService.Get<ProductListResponse>(endPoint, responseCallback);
         }

@@ -19,7 +19,7 @@ public class Shelving : MonoBehaviour
     public int depthSize = 4;
     public List<List<List<Model.Slot>>> slotData;
     // Start is called before the first frame update
-    
+/*    
 
 
     private string socketURL =
@@ -162,4 +162,5 @@ public class Shelving : MonoBehaviour
     {
 
     }
+    */
 }

@@ -10,9 +10,6 @@ public class ShelfObject : MonoBehaviour
     ///</summary>
     public List<SlotObject> slotData = new List<SlotObject>();
 
-    readonly float offset_x = 0.08f;
-    //readonly float offset_y = 0.0784f;
-    readonly float offset_z = 0.07f;
 
     // 0.08f*0,1,2,3,4..11
     // 1.7016f
@@ -61,16 +58,16 @@ public class ShelfObject : MonoBehaviour
         }
     }
 
-    public DrinkObject AddDrinkObject(int drinkID, int row, int col, int depth)
+    public DrinkObject AddDrinkObject(int drinkID, float row, float col, float depth)
     {
         DrinkObject go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(drinkID));
-        go.transform.SetParent(row_transforms[row]);
+        go.transform.SetParent(this.gameObject.transform);
         go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
                 go.transform.localPosition = new Vector3(
-                    col * offset_x,
-                    0f,
-                    depth * offset_z);
+                    row,
+                    col,
+                    depth);
         return go;
     }
 
@@ -148,13 +145,13 @@ public class ShelfObject : MonoBehaviour
             if (s.has_drink)
             {
                 var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
-                go.transform.SetParent(row_transforms[s.row]);
+                go.transform.SetParent(this.gameObject.transform);
                 go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
                 go.transform.localPosition = new Vector3(
-                    s.column * offset_x,
-                    0f,
-                    s.depth * offset_z);
+                    s.row,
+                    s.column,
+                    s.depth);
             }
         }
     }
@@ -176,13 +173,13 @@ public class ShelfObject : MonoBehaviour
             if (s.has_drink)
             {
                 var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
-                go.transform.SetParent(row_transforms[s.row]);
+                go.transform.SetParent(this.gameObject.transform);
                 go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
                 go.transform.localPosition = new Vector3(
-                    s.column * offset_x,
-                    0f,
-                    s.depth * offset_z);
+                    s.column,
+                    s.row,
+                    s.depth );
             }
         }
     }

@@ -16,10 +16,17 @@ public class DrinkObject : MonoBehaviour
 //-0.44 , 0.391
     public Product data;
     public Renderer m_Renderer;
+    public MeshFilter m_MeshFilter;
+
+    public Mesh snackMesh;
+    public Mesh cerealMesh;
+    public Mesh sandwichMesh;
+    public Mesh drinkMesh;
 
     void Awake()
     {
-        m_Renderer = this.GetComponent<Renderer>();
+        m_Renderer = this.GetComponent<Renderer>(); 
+        m_MeshFilter = GetComponent<MeshFilter>();
     }
     public void SetFBX()
     {
@@ -30,12 +37,32 @@ public class DrinkObject : MonoBehaviour
         m_Renderer.material.SetTexture("_MainTex", tex);
     }
 
+    public void SetMesh(Mesh mesh)
+    {
+        m_MeshFilter.mesh = mesh;
+    }
+
     ///<summary>
     // 오브젝트 세팅 시, Product로 이닛을 생성해야한다.
     ///</summary>
     public void Setup(Model.Product drink_data)
     {
         this.data = drink_data;
+        switch (drink_data.GETProductType())
+        {
+            case ProductType.CEREAL:
+                SetMesh(cerealMesh);
+                break;
+            case ProductType.DRINK:
+                SetMesh(drinkMesh);
+                break;
+            case ProductType.SANDWICH:
+                SetMesh(sandwichMesh);
+                break;
+            case ProductType.SNACK:
+                SetMesh(snackMesh);
+                break;
+        }
         this.SetTexture(CObjectPool.Instance.GetDrinkTexture(drink_data.prefab_url));
     }
 
