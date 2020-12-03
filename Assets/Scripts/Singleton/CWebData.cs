@@ -17,8 +17,8 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     public Dictionary<int, Slot> SlotDB = new Dictionary<int, Slot>();
 
 
-    private bool didFetchDrink = false;
-    private bool didFetchSlot = false;
+    public bool didFetchDrink = false;
+    public bool didFetchSlot = false;
     
     public static Product GetProductInfo(int id)
     {
@@ -96,7 +96,11 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     {
         if (didFetchDrink && didFetchSlot)
         {
-            CObjectPool.Instance.main.InitializeDrinks();
+            if (CObjectPool.Instance.main != null)
+            {
+                CObjectPool.Instance.main.InitializeDrinks();
+            }
+            
         }
         
     }
