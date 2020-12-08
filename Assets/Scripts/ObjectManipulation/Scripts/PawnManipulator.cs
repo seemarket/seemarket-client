@@ -35,14 +35,17 @@ namespace GoogleARCore.Examples.ObjectManipulation
         public Camera FirstPersonCamera;
 
         /// <summary>
-        /// A prefab to place when a raycast from a user touch hits a plane.
-        /// </summary>
-        public GameObject PawnPrefab;
-
-        /// <summary>
         /// Manipulator prefab to attach placed objects to.
         /// </summary>
         public GameObject ManipulatorPrefab;
+
+        public ARCanvas.ARCanvasControl arcanvasControl;
+
+        /// <summary>
+        /// A prefab to place when a raycast from a user touch hits a plane.
+        /// </summary>
+        public DrinkObject PawnPrefab;
+
 
         /// <summary>
         /// Returns true if the manipulation can be started for the given gesture.
@@ -59,6 +62,21 @@ namespace GoogleARCore.Examples.ObjectManipulation
             return false;
         }
 
+        
+
+        
+        /// <summary>
+        /// 클릭한 오브젝트를 스폰한다.
+        /// </summary>
+        public void setSpawnObject()
+        {
+            Model.Product p = arcanvasControl.currentSelectedProduct;
+            if (p != null)
+            { 
+                PawnPrefab.isClickable = false; 
+                PawnPrefab.Setup(p);
+            }
+        }
         /// <summary>
         /// Function called when the manipulation is ended.
         /// </summary>
@@ -94,8 +112,11 @@ namespace GoogleARCore.Examples.ObjectManipulation
                 else
                 {
                     // Instantiate game object at the hit pose.
-                    var gameObject = Instantiate(PawnPrefab, hit.Pose.position, hit.Pose.rotation);
-
+                    Model.Product p = arcanvasControl.currentSelectedProduct;
+                    DrinkObject drinkObject = CObjectPool.Instance.CreateDrinkObject(p);
+                    drinkObject.gameObject.SetActive(true);
+                    var gameObject = Instantiate(drinkObject, hit.Pose.position, hit.Pose.rotation);
+                    
                     // Instantiate manipulator.
                     var manipulator =
                         Instantiate(ManipulatorPrefab, hit.Pose.position, hit.Pose.rotation);

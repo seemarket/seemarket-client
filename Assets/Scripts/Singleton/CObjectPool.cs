@@ -81,6 +81,19 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     //     var go = data.type;
     //     return null;
     // }
+
+    public DrinkObject SpawnDrinkObject(Model.Product drink_data)
+    {
+        // Drink Prefab
+        if (drinkPrefab == null)
+        {
+            drinkPrefab = Resources.Load<DrinkObject>("DrinkPrefab");
+        }
+        var go = Instantiate(drinkPrefab).GetComponent<DrinkObject>();
+        go.gameObject.SetActive(true);
+        go.Setup(drink_data);
+        return go;
+    }
     
     public DrinkObject CreateDrinkObject(Model.Product drink_data)
     {

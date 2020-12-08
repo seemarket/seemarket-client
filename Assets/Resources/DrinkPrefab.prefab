@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7405490485775265519}
-  m_Mesh: {fileID: -2296342036501520809, guid: f9823f232d3d644439904529b629dda7, type: 3}
+  m_Mesh: {fileID: -5354015592537586918, guid: 6ea86b251e0c98b44915dae51ad22b30, type: 3}
 --- !u!23 &9149414833907128883
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97,20 +97,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactions: []
   data:
-    id: 0
-    title: 
-    type: 
-    prefab_url: 
-    description: 
-    price: 
-    thumbnail_url: 
-    product_type: 
-  m_Renderer: {fileID: 0}
-  m_MeshFilter: {fileID: 0}
+    id: 1
+    title: "\uCE60\uC131\uC0AC\uC774\uB2E4"
+    type: small
+    prefab_url: texture_chilsung_01.png
+    description: "\uCE60\uC131\uC0AC\uC774\uB2E4\uB294 \uBC18\uC138\uAE30 \uC774\uC0C1\uC758
+      \uC5ED\uC0AC\uB97C \uC9C0\uB2CC \uB300\uD55C\uBBFC\uAD6D No.1 \uC624\uB9AC\uC9C0\uB110
+      \uD0C4\uC0B0\uC74C\uB8CC\uC785\uB2C8\uB2E4.\n\uCCAD\uB7C9\uAC10\uC774 \uB290\uAEF4\uC9C0\uB294
+      \uD0C4\uC0B0\uACFC \uC0C1\uD07C\uD55C \uB808\uBAAC\uB77C\uC784\uD5A5\uC774
+      \uD2B9\uC9D5\uC785\uB2C8\uB2E4.\n\uC77C\uC0C1 \uC0DD\uD65C \uC911 \uAE30\uBD84\uC804\uD658,
+      \uAC08\uC99D\uD574\uC18C\uAC00 \uD544\uC694\uD55C \uC57C\uC678\uD65C\uB3D9\uC5D0
+      \uC801\uD569\uD569\uB2C8\uB2E4.\n\uB9D1\uACE0 \uAE68\uB057\uD55C \uCE60\uC131\uC0AC\uC774\uB2E4\uC758
+      \uBA85\uC131\uC744 \uC720\uC9C0\uD558\uAE30 \uC704\uD574 Pure, Clear, Caffeine
+      Free 3\uAC00\uC9C0 \uC6D0\uCE59\uC744 \uC9C0\uD0A4\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+    price: 680
+    thumbnail_url: https://raw.githubusercontent.com/seemarket/seemarket-product/master/1.jpg
+    product_type: DRINK
+  m_Renderer: {fileID: 9149414833907128883}
+  m_MeshFilter: {fileID: 3298263559933437642}
   snackMesh: {fileID: 878951038603269014, guid: a6b84dc239684b447bdb804563035923, type: 3}
   cerealMesh: {fileID: -8901446020298076076, guid: b91367f2d0003bc48b15eb0108edd949, type: 3}
   sandwichMesh: {fileID: -6328446071056725035, guid: d0258a16baab26e43908624e77ee41b3, type: 3}
-  drinkMesh: {fileID: 0}
+  drinkMesh: {fileID: -5354015592537586918, guid: 6ea86b251e0c98b44915dae51ad22b30, type: 3}
+  isClickable: 0
 --- !u!65 &2495666436203992426
 BoxCollider:
   m_ObjectHideFlags: 0

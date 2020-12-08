@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Linq;
+using Model;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -12,11 +14,12 @@ namespace ARCanvas
         public Button stallButton;
         public Button prefab; // This is our prefab object that will be exposed in the inspector
         
-        private int numberToCreate = 5; // number of objects to create. Exposed in inspector
-
         public GameObject gridObject;
-        
-        
+
+        /**
+         * 현재 선택된 모델.
+         */
+        public Model.Product currentSelectedProduct;
         
         void Start()
         {
@@ -56,12 +59,18 @@ namespace ARCanvas
                     });
                     StartCoroutine(DownloadImage(p.thumbnail_url, newObj));
                 }
+
+                if (CLocalDatabase.Instance.ProductDB.Count > 0)
+                {
+                    setSpawner(CLocalDatabase.Instance.ProductDB.Values.First());
+                }
+                
             }
         }
         
         private void setSpawner(Model.Product p)
         {
-            
+            currentSelectedProduct = p;
         }
         
         IEnumerator DownloadImage(string MediaUrl, Button clickableButton)

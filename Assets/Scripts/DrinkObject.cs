@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Model;
@@ -23,6 +24,7 @@ public class DrinkObject : MonoBehaviour
     public Mesh sandwichMesh;
     public Mesh drinkMesh;
 
+    public Boolean isClickable = true;
     void Awake()
     {
         m_Renderer = this.GetComponent<Renderer>(); 
@@ -73,7 +75,13 @@ public class DrinkObject : MonoBehaviour
     ///<summary>
     // [유니티 기능] 마우스 클릭시 오픈되는 페이지
     ///</summary>
-    void OnMouseUp() { OnClickFunction(); }
+    void OnMouseUp()
+    {
+        if (isClickable)
+        {
+            OnClickFunction();
+        }
+    }
     //void OnMouseOver() { OnHoverFunction(); }
     void OnClickFunction()
     {

@@ -493,6 +493,10 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 2650064849432603803, guid: 72460917530d948c89a5bd1726de4096, type: 3}
+    - target: {fileID: 8858384161870961291, guid: 649c02a7c57874ea294298ef06b29d8a, type: 3}
+      propertyPath: PawnPrefab
+      value: 
+      objectReference: {fileID: 1577521328827250321, guid: 7e241843a4aa35d4ebd78648c5ae4bfb, type: 3}
     - target: {fileID: 8890665471032711910, guid: 649c02a7c57874ea294298ef06b29d8a, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

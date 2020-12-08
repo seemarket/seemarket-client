@@ -1,5 +1,6 @@
 ﻿using StallCanvas;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace test
@@ -55,7 +56,14 @@ namespace test
             }
         }
 
-
+        public void moveToAR()
+        {
+            SceneManager.LoadScene("ObjectManipulation");
+        }
+        
+        private void checkError(){
+            //에러들 확인하고 표시해주는 함수. 데모 단계에서는 구현하지 않았음.
+        }
 
         public void enableAlert(){
             //AlertBox.SetActive(true);

@@ -36,7 +36,6 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         HandleGetSlotList();
         
         // 시작 시 현재 매장의 상황.
-        SocketIOComponent.Instance.url = socketURL;
         SocketIOComponent.Instance.On("open", HandleOpen);
         SocketIOComponent.Instance.On("error", HandleError);
         SocketIOComponent.Instance.On("close", HandleClose);

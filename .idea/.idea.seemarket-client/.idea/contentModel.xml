@@ -79,37 +79,6 @@
                 <e p="SettingsMenu.cs" t="Include" />
               </e>
             </e>
-            <e p="ObjectManipulation" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Gestures" t="Include">
-                  <e p="DragGesture.cs" t="Include" />
-                  <e p="DragGestureRecognizer.cs" t="Include" />
-                  <e p="Gesture.cs" t="Include" />
-                  <e p="GestureRecognizer.cs" t="Include" />
-                  <e p="GestureTouchesUtility.cs" t="Include" />
-                  <e p="PinchGesture.cs" t="Include" />
-                  <e p="PinchGestureRecognizer.cs" t="Include" />
-                  <e p="TapGesture.cs" t="Include" />
-                  <e p="TapGestureRecognizer.cs" t="Include" />
-                  <e p="TransformationUtility.cs" t="Include" />
-                  <e p="TwistGesture.cs" t="Include" />
-                  <e p="TwistGestureRecognizer.cs" t="Include" />
-                  <e p="TwoFingerDragGesture.cs" t="Include" />
-                  <e p="TwoFingerDragGestureRecognizer.cs" t="Include" />
-                </e>
-                <e p="ManipulationSystem.cs" t="Include" />
-                <e p="Manipulators" t="Include">
-                  <e p="ElevationManipulator.cs" t="Include" />
-                  <e p="Manipulator.cs" t="Include" />
-                  <e p="RotationManipulator.cs" t="Include" />
-                  <e p="ScaleManipulator.cs" t="Include" />
-                  <e p="SelectionManipulator.cs" t="Include" />
-                  <e p="TranslationManipulator.cs" t="Include" />
-                </e>
-                <e p="ObjectManipulationController.cs" t="Include" />
-                <e p="PawnManipulator.cs" t="Include" />
-              </e>
-            </e>
             <e p="PersistentCloudAnchors" t="Include">
               <e p="Scripts" t="Include">
                 <e p="ARViewManager.cs" t="Include" />
@@ -374,6 +343,37 @@
             <e p="Slot.cs" t="Include" />
             <e p="SlotUpdate.cs" t="Include" />
             <e p="Stall.cs" t="Include" />
+          </e>
+          <e p="ObjectManipulation" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Gestures" t="Include">
+                <e p="DragGesture.cs" t="Include" />
+                <e p="DragGestureRecognizer.cs" t="Include" />
+                <e p="Gesture.cs" t="Include" />
+                <e p="GestureRecognizer.cs" t="Include" />
+                <e p="GestureTouchesUtility.cs" t="Include" />
+                <e p="PinchGesture.cs" t="Include" />
+                <e p="PinchGestureRecognizer.cs" t="Include" />
+                <e p="TapGesture.cs" t="Include" />
+                <e p="TapGestureRecognizer.cs" t="Include" />
+                <e p="TransformationUtility.cs" t="Include" />
+                <e p="TwistGesture.cs" t="Include" />
+                <e p="TwistGestureRecognizer.cs" t="Include" />
+                <e p="TwoFingerDragGesture.cs" t="Include" />
+                <e p="TwoFingerDragGestureRecognizer.cs" t="Include" />
+              </e>
+              <e p="ManipulationSystem.cs" t="Include" />
+              <e p="Manipulators" t="Include">
+                <e p="ElevationManipulator.cs" t="Include" />
+                <e p="Manipulator.cs" t="Include" />
+                <e p="RotationManipulator.cs" t="Include" />
+                <e p="ScaleManipulator.cs" t="Include" />
+                <e p="SelectionManipulator.cs" t="Include" />
+                <e p="TranslationManipulator.cs" t="Include" />
+              </e>
+              <e p="ObjectManipulationController.cs" t="Include" />
+              <e p="PawnManipulator.cs" t="Include" />
+            </e>
           </e>
           <e p="PrefabCollection.cs" t="Include" />
           <e p="Service" t="Include">
