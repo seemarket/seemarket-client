@@ -2110,9 +2110,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1633175116436554733, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: test.CanvasControl, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116436554733, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: panelChangeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116436554733, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116436554733, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116478923710, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: panelChangeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116478923710, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633175116478923710, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1633175116781866886, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1633175116898769729, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2218,6 +2246,18 @@ PrefabInstance:
       propertyPath: arButton
       value: 
       objectReference: {fileID: 764633497}
+    - target: {fileID: 1633175118064112572, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: UserPanel
+      value: 
+      objectReference: {fileID: 1040759697}
+    - target: {fileID: 1633175118064112572, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: BackGroundPanel
+      value: 
+      objectReference: {fileID: 1157857934}
+    - target: {fileID: 7552186001844966742, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
 --- !u!1001 &759759009
@@ -3493,6 +3533,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f46f3eee96f0bc44ba81479d51bac0e5, type: 3}
+--- !u!1 &1040759697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2095306126771189102, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+  m_PrefabInstance: {fileID: 748940551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1060981167
 PrefabInstance:
   m_ObjectHideFlags: 0
