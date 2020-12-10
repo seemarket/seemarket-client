@@ -140,13 +140,14 @@ namespace test
                     stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numStatusPanel :
-                    BackGroundPanel.SetActive(true);
+                    BackGroundPanel.SetActive(false);
                     Initial.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(true);
                     UserPanel.SetActive(false);
                     stallCanvasControl.gameObject.SetActive(false);
+                    CObjectPool.Instance.main.forceInitialize();
                     break;
                 case CanvasStates.numStatusShowStall:
                     BackGroundPanel.SetActive(false);

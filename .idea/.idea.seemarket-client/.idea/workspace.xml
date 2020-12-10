@@ -16,12 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:RelocationUI" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DrinkPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DrinkPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,30 +40,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/8d/0b30fd50/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/65/44fb5369/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/db/6d9c3004/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/94/23b02042/WebUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/ea/3c71a836/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/814BD9A1-1538-4360-9098-E1F5491F0282/49/e2662587/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/0b295a95/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50A/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/31/49acff7e/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECBAB075-47B5-431B-A8E9-EAA7B3FB8CCD/51/4de730bf/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/4f/fae1aaae/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/RectMask2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/f7/fdcb5756/Texture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/55ADAE45-46CD-485B-A70E-2948332EBE8C/50F/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/65/44fb5369/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/d8/984f9680/UnityWebRequestAsyncOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/ea/3c71a836/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55ADAE45-46CD-485B-A70E-2948332EBE8C/aa/8242e299/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SocketIO/Scripts/Test/TestSocketIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/a9/a030e041/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/bd/b70607a6/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ECBAB075-47B5-431B-A8E9-EAA7B3FB8CCD/51/4de730bf/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/35/ac6d7342/NameValueCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/LayoutUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.1.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38B19601-63D5-404A-ACB4-C5CCCDE2E18B/be/699f4752/Material.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DBEFA87-77EF-42F6-960C-4D68F040AB92/f8/35ada556/UriBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/923C127C-DFD0-4117-A7CB-C4B4823BF946/4f/fae1aaae/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -91,11 +101,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectManipulation/Scripts/PawnManipulator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
       </list>
     </option>
   </component>
@@ -123,10 +133,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13992">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="13992" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -182,8 +192,8 @@
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
     <state x="-1462" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.788/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603879099876" />
-    <state width="1398" height="263" key="GridCell.Tab.0.bottom" timestamp="1607425270033">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1607580805882">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607425270033" />
     <state width="1878" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604584459312" />
@@ -193,9 +203,9 @@
     <state width="1079" height="374" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140914" />
     <state width="1044" height="263" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1604584589479" />
     <state width="1230" height="215" key="GridCell.Tab.0.bottom/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276981" />
-    <state width="1230" height="215" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330963" />
-    <state width="1398" height="263" key="GridCell.Tab.0.center" timestamp="1607425270031">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607580805882" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1607580805881">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607425270031" />
     <state width="1878" height="263" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604584459311" />
@@ -205,9 +215,9 @@
     <state width="1079" height="374" key="GridCell.Tab.0.center/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140913" />
     <state width="1044" height="263" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1604584589478" />
     <state width="1230" height="215" key="GridCell.Tab.0.center/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276981" />
-    <state width="1230" height="215" key="GridCell.Tab.0.center/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330962" />
-    <state width="1398" height="263" key="GridCell.Tab.0.left" timestamp="1607425270030">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607580805881" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1607580805880">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607425270030" />
     <state width="1878" height="263" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604584459310" />
@@ -217,9 +227,9 @@
     <state width="1079" height="374" key="GridCell.Tab.0.left/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140912" />
     <state width="1044" height="263" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1604584589478" />
     <state width="1230" height="215" key="GridCell.Tab.0.left/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276981" />
-    <state width="1230" height="215" key="GridCell.Tab.0.left/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330962" />
-    <state width="1398" height="263" key="GridCell.Tab.0.right" timestamp="1607425270032">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607580805880" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1607580805881">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607425270032" />
     <state width="1878" height="263" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604584459312" />
@@ -229,9 +239,9 @@
     <state width="1079" height="374" key="GridCell.Tab.0.right/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140913" />
     <state width="1044" height="263" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1604584589479" />
     <state width="1230" height="215" key="GridCell.Tab.0.right/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276981" />
-    <state width="1230" height="215" key="GridCell.Tab.0.right/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330963" />
-    <state width="1398" height="263" key="GridCell.Tab.1.bottom" timestamp="1607425270035">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607580805881" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom" timestamp="1607581438251">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607425270035" />
     <state width="1195" height="177" key="GridCell.Tab.1.bottom/0.23.1440.788/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603879625339" />
@@ -240,9 +250,9 @@
     <state width="1079" height="374" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140734" />
     <state width="1044" height="263" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1604584512174" />
     <state width="1230" height="215" key="GridCell.Tab.1.bottom/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276982" />
-    <state width="1230" height="215" key="GridCell.Tab.1.bottom/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330966" />
-    <state width="1398" height="263" key="GridCell.Tab.1.center" timestamp="1607425270034">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.1.bottom/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607581438251" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center" timestamp="1607581438250">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607425270034" />
     <state width="1195" height="177" key="GridCell.Tab.1.center/0.23.1440.788/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603879625338" />
@@ -251,9 +261,9 @@
     <state width="1079" height="374" key="GridCell.Tab.1.center/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140733" />
     <state width="1044" height="263" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1604584512174" />
     <state width="1230" height="215" key="GridCell.Tab.1.center/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276982" />
-    <state width="1230" height="215" key="GridCell.Tab.1.center/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330965" />
-    <state width="1398" height="263" key="GridCell.Tab.1.left" timestamp="1607425270033">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.1.center/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607581438250" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left" timestamp="1607581438250">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607425270033" />
     <state width="1195" height="177" key="GridCell.Tab.1.left/0.23.1440.788/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603879625338" />
@@ -262,9 +272,9 @@
     <state width="1079" height="374" key="GridCell.Tab.1.left/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140732" />
     <state width="1044" height="263" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1604584512173" />
     <state width="1230" height="215" key="GridCell.Tab.1.left/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276982" />
-    <state width="1230" height="215" key="GridCell.Tab.1.left/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330964" />
-    <state width="1398" height="263" key="GridCell.Tab.1.right" timestamp="1607425270034">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="214" key="GridCell.Tab.1.left/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607581438250" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right" timestamp="1607581438251">
+      <screen x="-1920" y="-155" width="1920" height="955" />
     </state>
     <state width="1398" height="263" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607425270034" />
     <state width="1195" height="177" key="GridCell.Tab.1.right/0.23.1440.788/-1920.-157.1920.1057@-1920.-157.1920.1057" timestamp="1603879625338" />
@@ -273,7 +283,7 @@
     <state width="1079" height="374" key="GridCell.Tab.1.right/0.23.1440.877/-1920.-157.1920.966@0.23.1440.877" timestamp="1603892140733" />
     <state width="1044" height="263" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1604584512174" />
     <state width="1230" height="215" key="GridCell.Tab.1.right/0.25.1440.775/-1920.-155.1920.1055@-1920.-155.1920.1055" timestamp="1607015276982" />
-    <state width="1230" height="215" key="GridCell.Tab.1.right/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607015330965" />
+    <state width="1398" height="214" key="GridCell.Tab.1.right/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1607581438251" />
     <state width="1398" height="263" key="GridCell.Tab.2.bottom" timestamp="1607425270036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -532,19 +542,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs</url>
-          <line>51</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" initialLine="51">
-            <startOffsets>
-              <option value="1150" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1173" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -113,8 +113,8 @@ MonoBehaviour:
     price: 680
     thumbnail_url: https://raw.githubusercontent.com/seemarket/seemarket-product/master/1.jpg
     product_type: DRINK
-  m_Renderer: {fileID: 9149414833907128883}
-  m_MeshFilter: {fileID: 3298263559933437642}
+  m_Renderer: {fileID: 0}
+  m_MeshFilter: {fileID: 0}
   snackMesh: {fileID: 878951038603269014, guid: a6b84dc239684b447bdb804563035923, type: 3}
   cerealMesh: {fileID: -8901446020298076076, guid: b91367f2d0003bc48b15eb0108edd949, type: 3}
   sandwichMesh: {fileID: -6328446071056725035, guid: d0258a16baab26e43908624e77ee41b3, type: 3}
