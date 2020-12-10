@@ -16,6 +16,7 @@ namespace test
             numStatusShowStall = 4, //
             numRelocationPanel = 5, //매대 재배치 화면
             numUserPanel = 6, //매대 재배치 화면
+            numObjectScanPanel = 7, //물품 스캔 화면
         }
         private CanvasStates LastCanvas = CanvasStates.numRelocationPanel;
         private CanvasStates currentCanvas = 0;
@@ -28,6 +29,9 @@ namespace test
         public GameObject AlertBox;
         public GameObject BackGroundPanel;
         public GameObject UserPanel;
+        public GameObject RelocationPanel;
+        //public GameObject ObjectScanPanel;
+
 
         public StallCanvasControl stallCanvasControl;
 
@@ -132,6 +136,7 @@ namespace test
                     OwnerPanel.SetActive(true);
                     StatusPanel.SetActive(false);
                     UserPanel.SetActive(false);
+                    RelocationPanel.SetActive(false);
                     stallCanvasControl.gameObject.SetActive(false);
                     break;
                 case CanvasStates.numStatusPanel :
@@ -151,14 +156,25 @@ namespace test
                     StatusPanel.SetActive(false);
                     UserPanel.SetActive(false);
                     stallCanvasControl.gameObject.SetActive(true);
+                    RelocationPanel.SetActive(false);
                     CObjectPool.Instance.main.forceInitialize();
                     break;
-                case CanvasStates.numUserPanel:
-                    BackGroundPanel.SetActive(false);
+                case CanvasStates.numRelocationPanel:
+                    BackGroundPanel.SetActive(true);
                     Initial.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
+                    RelocationPanel.SetActive(true);
+                    UserPanel.SetActive(false);
+                    break;
+                case CanvasStates.numUserPanel:
+                    BackGroundPanel.SetActive(true);
+                    Initial.SetActive(false);
+                    Main.SetActive(false);
+                    OwnerPanel.SetActive(false);
+                    StatusPanel.SetActive(false);
+                    RelocationPanel.SetActive(false);
                     UserPanel.SetActive(true);
                     break;
                 default :
@@ -175,6 +191,10 @@ namespace test
         public void goBack(){
             switch(currentCanvas){
                 case CanvasStates.numStatusPanel :
+                    currentCanvas = CanvasStates.numOwnerPanel;
+                    SetCanvasState();
+                    break;
+                case CanvasStates.numRelocationPanel :
                     currentCanvas = CanvasStates.numOwnerPanel;
                     SetCanvasState();
                     break;
