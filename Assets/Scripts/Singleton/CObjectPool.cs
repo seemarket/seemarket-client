@@ -49,6 +49,11 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     
         }
 
+        initPool();
+    }
+
+    private void initPool()
+    {
         for (int i = 0; i < drinkPool; ++i)
         {
             var go = Instantiate(drinkPrefab).GetComponent<DrinkObject>();
@@ -97,6 +102,11 @@ public class CObjectPool : CSingletonMono<CObjectPool>
     
     public DrinkObject CreateDrinkObject(Model.Product drink_data)
     {
+        if (drinkObjPool.Count == 0)
+        {
+            initPool();
+        }
+        
         var go = drinkObjPool.Dequeue();
         go.Setup(drink_data);
         return go;

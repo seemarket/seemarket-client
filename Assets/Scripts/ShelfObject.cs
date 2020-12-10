@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Model;
 using UnityEditor.UI;
 
 
@@ -73,6 +74,22 @@ public class ShelfObject : MonoBehaviour
         }
     }
 
+
+    /**
+     * 새로운 상품 객체를 할당한다.
+     */
+    public void HandleCreateProduct(Model.Slot slot)
+    {
+        DrinkObject go = null;
+        if (slot.has_drink)
+        {
+            // 위치 설정
+            go = AddDrinkObject(slot);
+        }
+        // 목록에 추가
+        dic.Add(slot.id, go);
+    }
+    
     public DrinkObject AddDrinkObject(Model.Slot slot)
     {
 
@@ -168,33 +185,8 @@ public class ShelfObject : MonoBehaviour
     /// 모든 값들 다 처리해서 정상적으로 보이도록 하기
     /// </summary>
     public void InitializeDrinks()
-    {
-        foreach (Model.Slot s in CLocalDatabase.Instance.SlotDB.Values)
-        {
-            if (s.has_drink)
-            {
-                var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
-                go.transform.SetParent(this.gameObject.transform);
-                go.transform.localRotation = Quaternion.identity;
-                if (this.shelfMode == ShelfMode.EDIT)
-                {
-                    go.isClickable = false;
-                    go.isDragable = true;
-
-                }
-                else
-                {
-                    go.isClickable = true;
-                    go.isDragable = false;
-                }
-                go.gameObject.SetActive(true);
-                go.SetSlotData(s);
-                go.transform.localPosition = new Vector3(
-                    s.row,
-                    s.column,
-                    s.depth);
-            }
-        }
+    {       
+        Initialize(CLocalDatabase.Instance.SlotDB.Values.ToList());
     }
     
     public List<Transform> row_transforms;

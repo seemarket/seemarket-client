@@ -1,4 +1,5 @@
-﻿using StallCanvas;
+﻿using DefaultNamespace.RelocationCanvas;
+using StallCanvas;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,7 +35,8 @@ namespace test
 
 
         public StallCanvasControl stallCanvasControl;
-
+        public RelocationCanvasControl relocationCanvasControl;
+        
         private const string notImplemented = "아직 구현되지 않았습니다.";
         private const string notInMainPanel = "현재 Main 페이지가 아닙니다.";
         private const string notInOwnerPanel = "현재 Owner 페이지가 아닙니다.";
@@ -169,6 +171,7 @@ namespace test
                     RelocationPanel.SetActive(true);
                     UserPanel.SetActive(false);
                     CObjectPool.Instance.main.forceInitialize(ShelfMode.EDIT);
+                    relocationCanvasControl.initialize();
                     break;
                 case CanvasStates.numUserPanel:
                     BackGroundPanel.SetActive(true);

@@ -376,6 +376,9 @@
             </e>
           </e>
           <e p="PrefabCollection.cs" t="Include" />
+          <e p="RelocationCanvas" t="Include">
+            <e p="RelocationCanvasControl.cs" t="Include" />
+          </e>
           <e p="Service" t="Include">
             <e p="DrinkService.cs" t="Include" />
             <e p="NetworkService.cs" t="Include" />

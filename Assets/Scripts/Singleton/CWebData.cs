@@ -164,7 +164,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     /// <summary>
     /// 초기화하고 배치를 원래대로 되돌린다.
     /// </summary>
-    private void ResetSimulation()
+    public void ResetSimulation()
     {
         SocketIOComponent.Instance.Emit("reset_simulation");
     }
@@ -179,13 +179,25 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         Response<SlotService.SlotListResponse> value = JsonUtility.FromJson<Response<SlotService.SlotListResponse>>(rawString);
         
         Debug.Log("simulation result" + rawString);
+        
+        SlotDB.Clear();
+        
+        foreach (Slot s in value.data.slot_list)
+        {
+            SlotDB.Add(s.id, s);
+            Debug.Log(string.Format("슬롯:[{0}/{1}/{2}] {3}",
+                s.row, s.column, s.depth, s.has_drink));
+        }
+
+        this.didFetchSlot = true;
+        HandleStallInit();
     }
     
     
     /// <summary>
     /// 상품을 매대에 조작하여 추가한다.
     /// </summary>
-    private void CreateProduct(CreateCommand createCommand)
+    public void CreateProduct(CreateCommand createCommand)
     {
         JSONObject request = new JSONObject(
             JsonUtility.ToJson(createCommand));
@@ -202,6 +214,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         Response<SlotService.SlotResponse> value = JsonUtility.FromJson<Response<SlotService.SlotResponse>>(rawString);
         
         Debug.Log("create result" + rawString);
+        CObjectPool.Instance.main.HandleCreateProduct(value.data.slot);
     }
 
     

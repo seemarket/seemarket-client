@@ -26,11 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RelocationCanvas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RelocationCanvas/RelocationCanvasControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RelocationCanvas/RelocationCanvasControl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectManipulation/Scripts/PawnManipulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectManipulation/Scripts/PawnManipulator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,12 +110,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectManipulation/Scripts/PawnManipulator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RelocationCanvas/RelocationCanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
       </list>
     </option>
   </component>
