@@ -65,11 +65,8 @@ public class DrinkObject : MonoBehaviour
                 SetMesh(snackMesh);
                 break;
         }
+        this.SetTexture(CObjectPool.Instance.GetDrinkTexture(drink_data.prefab_url));
 
-        if (drink_data.GETProductType() != ProductType.CEREAL)
-        {
-            this.SetTexture(CObjectPool.Instance.GetDrinkTexture(drink_data.prefab_url));
-        }
     }
 
     #region Unity interactions
