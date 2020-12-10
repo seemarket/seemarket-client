@@ -154,9 +154,11 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         MoveProduct(moveCommand);
         **/
         
+        /**
         DeleteCommand deleteCommand = new DeleteCommand();
         deleteCommand.slot_id = 1470;
         DeleteProduct(deleteCommand);
+    */
     }
 
     /// <summary>
@@ -206,7 +208,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     /// <summary>
     /// 상품을 매대에 조작하여 이동한다.
     /// </summary>
-    private void MoveProduct(MoveCommand moveCommand)
+    public void MoveProduct(MoveCommand moveCommand)
     {
         JSONObject request = new JSONObject(
             JsonUtility.ToJson(moveCommand));

@@ -64,19 +64,6 @@ namespace GoogleARCore.Examples.ObjectManipulation
 
         
 
-        
-        /// <summary>
-        /// 클릭한 오브젝트를 스폰한다.
-        /// </summary>
-        public void setSpawnObject()
-        {
-            Model.Product p = arcanvasControl.currentSelectedProduct;
-            if (p != null)
-            { 
-                PawnPrefab.isClickable = false; 
-                PawnPrefab.Setup(p);
-            }
-        }
         /// <summary>
         /// Function called when the manipulation is ended.
         /// </summary>

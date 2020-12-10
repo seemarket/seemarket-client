@@ -147,7 +147,7 @@ namespace test
                     StatusPanel.SetActive(true);
                     UserPanel.SetActive(false);
                     stallCanvasControl.gameObject.SetActive(false);
-                    CObjectPool.Instance.main.forceInitialize();
+                    CObjectPool.Instance.main.forceInitialize(ShelfMode.VIEW);
                     break;
                 case CanvasStates.numStatusShowStall:
                     BackGroundPanel.SetActive(false);
@@ -158,16 +158,17 @@ namespace test
                     UserPanel.SetActive(false);
                     stallCanvasControl.gameObject.SetActive(true);
                     RelocationPanel.SetActive(false);
-                    CObjectPool.Instance.main.forceInitialize();
+                    CObjectPool.Instance.main.forceInitialize(ShelfMode.VIEW);
                     break;
                 case CanvasStates.numRelocationPanel:
-                    BackGroundPanel.SetActive(true);
+                    BackGroundPanel.SetActive(false);
                     Initial.SetActive(false);
                     Main.SetActive(false);
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(false);
                     RelocationPanel.SetActive(true);
                     UserPanel.SetActive(false);
+                    CObjectPool.Instance.main.forceInitialize(ShelfMode.EDIT);
                     break;
                 case CanvasStates.numUserPanel:
                     BackGroundPanel.SetActive(true);

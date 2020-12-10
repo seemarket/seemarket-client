@@ -24,7 +24,14 @@ public class DrinkObject : MonoBehaviour
     public Mesh sandwichMesh;
     public Mesh drinkMesh;
 
-    public Boolean isClickable = true;
+    public Boolean isClickable = false;
+    public Boolean isDragable = false;
+
+    public Model.Slot slot_data;
+
+    public Vector3 previousLocation;
+    public Vector3 finalLocation;
+    
     void Awake()
     {
         m_Renderer = this.GetComponent<Renderer>(); 
@@ -42,6 +49,11 @@ public class DrinkObject : MonoBehaviour
     public void SetMesh(Mesh mesh)
     {
         m_MeshFilter.mesh = mesh;
+    }
+
+    public void SetSlotData(Model.Slot slot_data)
+    {
+        this.slot_data = slot_data;
     }
 
     ///<summary>
@@ -73,15 +85,42 @@ public class DrinkObject : MonoBehaviour
 
     #endregion
 
+
+    private void OnMouseDown()
+    {
+        this.previousLocation = this.transform.position;
+    }
+
+    /**
+     * 움직인 결과를 서버에 전송한다. 
+     */
+    private void moveProduct()
+    {
+        MoveCommand moveCommand = new MoveCommand();
+        moveCommand.slot_id = this.slot_data.id;
+        moveCommand.row = this.transform.position.x;
+        moveCommand.depth = this.transform.position.z;
+        moveCommand.column = this.transform.position.y;
+        
+        CLocalDatabase.Instance.MoveProduct(moveCommand);
+
+    }
+
     ///<summary>
     // [유니티 기능] 마우스 클릭시 오픈되는 페이지
     ///</summary>
     void OnMouseUp()
     {
+        if (isDragable)
+        {
+            moveProduct();
+        }
+        
         if (isClickable)
         {
             OnClickFunction();
         }
+        
     }
     //void OnMouseOver() { OnHoverFunction(); }
     void OnClickFunction()
@@ -94,7 +133,19 @@ public class DrinkObject : MonoBehaviour
     {
         Debug.Log("Mouse is hovering");
     }
+    void OnMouseDrag()
+    {
+        if (isDragable)
+        {
+            Vector3 mousePosition 
+                = new Vector3(Input.mousePosition.x, Input.mousePosition.y, this.transform.position.z);
+            //마우스 좌표를 스크린 투 월드로 바꾸고 이 객체의 위치로 설정해 준다.
+            Vector3 point = Camera.main.ScreenToWorldPoint(mousePosition); // this.transform.position = new Vector3(point.x, point.y, this.transform.position.z);
 
+            this.transform.position = point;
+            this.finalLocation = this.transform.position;
+        }
+    }
     public void DestoryObject()
     {
         CObjectPool.Instance.DestroyDrinkObject(this);

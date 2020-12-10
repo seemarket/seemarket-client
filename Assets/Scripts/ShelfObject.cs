@@ -2,7 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEditor.UI;
 
+
+public enum ShelfMode
+{
+    EDIT, VIEW
+}
 public class ShelfObject : MonoBehaviour
 {
     ///<sumamry>
@@ -21,14 +27,19 @@ public class ShelfObject : MonoBehaviour
     public Dictionary<int, DrinkObject> dic
         = new Dictionary<int, DrinkObject>();
 
+    public ShelfMode shelfMode = ShelfMode.EDIT;
+    
     private void Awake() {
 
         if (CObjectPool.Instance.main == null)
             CObjectPool.Instance.main = this;
     }
+    
+    
     [ContextMenu("Force Reset&Init")]
-    public void forceInitialize()
+    public void forceInitialize(ShelfMode shelfmode)
     {
+        this.shelfMode = shelfmode;
         Initialize(CLocalDatabase.Instance.SlotDB.Values.ToList());
     }
     
@@ -44,6 +55,10 @@ public class ShelfObject : MonoBehaviour
         }
         dic.Clear();
 
+        foreach (Transform child in this.transform) {
+            GameObject.Destroy(child.gameObject);
+        }
+        
         // 재생성
         foreach (var slot in slot_data)
         {
@@ -51,17 +66,34 @@ public class ShelfObject : MonoBehaviour
             if (slot.has_drink)
             {
                 // 위치 설정
-                go = AddDrinkObject(slot.drink_id, slot.row, slot.column, slot.depth);
+                go = AddDrinkObject(slot);
             }
             // 목록에 추가
                 dic.Add(slot.id, go);
         }
     }
 
-    public DrinkObject AddDrinkObject(int drinkID, float row, float col, float depth)
+    public DrinkObject AddDrinkObject(Model.Slot slot)
     {
+
+        int drinkID = slot.drink_id;
+        float row = slot.row;
+        float col = slot.column;
+        float depth = slot.depth;
         DrinkObject go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(drinkID));
         go.transform.SetParent(this.gameObject.transform);
+        if (this.shelfMode == ShelfMode.EDIT)
+        {
+            go.isClickable = false;
+            go.isDragable = true;
+
+        }
+        else
+        {
+            go.isClickable = true;
+            go.isDragable = false;
+        }
+        go.SetSlotData(slot);
         go.transform.localRotation = Quaternion.identity;
                 go.gameObject.SetActive(true);
                 go.transform.localPosition = new Vector3(
@@ -85,10 +117,7 @@ public class ShelfObject : MonoBehaviour
             // arrived
             dic.Add(
                 key: _.updated_slot_info.id, 
-                value: AddDrinkObject(_.updated_slot_info.drink_id, 
-                    _.updated_slot_info.row,
-                    _.updated_slot_info.column,
-                    _.updated_slot_info.depth));
+                value: AddDrinkObject(_.updated_slot_info));
         }
     }
 
@@ -147,7 +176,19 @@ public class ShelfObject : MonoBehaviour
                 var go = CObjectPool.Instance.CreateDrinkObject(CLocalDatabase.GetProductInfo(s.drink_id));
                 go.transform.SetParent(this.gameObject.transform);
                 go.transform.localRotation = Quaternion.identity;
+                if (this.shelfMode == ShelfMode.EDIT)
+                {
+                    go.isClickable = false;
+                    go.isDragable = true;
+
+                }
+                else
+                {
+                    go.isClickable = true;
+                    go.isDragable = false;
+                }
                 go.gameObject.SetActive(true);
+                go.SetSlotData(s);
                 go.transform.localPosition = new Vector3(
                     s.row,
                     s.column,
