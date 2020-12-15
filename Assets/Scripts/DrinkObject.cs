@@ -34,16 +34,24 @@ public class DrinkObject : MonoBehaviour
 
 
     public int frame = 0;
+    private Vector3 beforePosition;
+    private Vector3 targetPosition;
+    
     public IEnumerator Diasppear()
     {
-        Vector3 beforePosition = transform.position;
-        Vector3 targetPosition = transform.position + Vector3.forward * 3f;
-        frame++;
-        if (frame < 100)
+        if (frame == 0)
+        { 
+            beforePosition = transform.position;
+            targetPosition = transform.position + Vector3.forward * 3f;
+        }
+        while (frame < 100)
         {
+            frame++;
             float time = ((float) frame) / 100f;
-            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
-            yield return new WaitForSeconds(0.1f);
+            Debug.Log(time);
+
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, time);
+            yield return new WaitForFixedUpdate();
         }
         
         DestoryObject();
@@ -51,28 +59,38 @@ public class DrinkObject : MonoBehaviour
 
     public IEnumerator Appear()
     {
-        Vector3 beforePosition = transform.position + Vector3.forward * 3f;
-        Vector3 targetPosition = transform.position;
-        frame++;
-        if (frame < 100)
+        if (frame == 0)
         {
+            beforePosition = transform.position + Vector3.forward * 3f;
+            targetPosition = transform.position;
+        }
+        while (frame < 100)
+        {
+            frame++;
             float time = ((float) frame) / 100f; 
-            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
-            yield return new WaitForSeconds(0.1f);
+            Debug.Log(time);
+
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, time);
+            yield return null;
         }
     }
 
     public IEnumerator Move(Vector3 targetPosition)
     {
-        Vector3 beforePosition = transform.position;
+        if (frame == 0)
+        {
+            beforePosition = transform.position;
+        }
        
         frame++;
-        if (frame < 100)
+        while (frame < 100)
         {
+            frame++;
             float time = ((float) frame) / 100f; 
    
-            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
-            yield return new WaitForSeconds(0.1f);
+            Debug.Log(time);
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, time);
+            yield return new WaitForFixedUpdate();
         }
     }
     
