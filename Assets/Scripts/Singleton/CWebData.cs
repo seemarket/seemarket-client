@@ -7,6 +7,11 @@ using SocketIO;
 using Unity.Profiling;
 using UnityEngine;
 
+public enum SimulationType
+{
+    START, MOVE, CHANGE, STOP
+}
+
 public class CLocalDatabase : CSingletonMono<CLocalDatabase>
 {
     DrinkService _drinkService = new DrinkService();
@@ -51,11 +56,24 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     }
     #region HANDLE CODES
 
-    public void FireSimulation()
+    public void FireSimulation(SimulationType s)
     {
-        
-        // 1초마다 업데이트 처리를 하는 시뮬레이션을 호출합니다.
-        //  StartCoroutine(StartSimulation());
+
+        switch (s)
+        {
+            case SimulationType.MOVE:
+                SocketIOComponent.Instance.Emit("move_simulation");
+                break;
+            case SimulationType.CHANGE:
+                SocketIOComponent.Instance.Emit("change_simulation");
+                break;
+            case SimulationType.START:
+                SocketIOComponent.Instance.Emit("start_simulation");
+                break;
+            case SimulationType.STOP:
+                SocketIOComponent.Instance.Emit("stop_simulation");
+                break;
+        }
     }
     public void HandleGetProductList()
 

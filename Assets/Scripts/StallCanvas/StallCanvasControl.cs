@@ -16,6 +16,13 @@ namespace StallCanvas
         /// </summary>
         public Button startSimulationButton;
 
+        public Button moveSimulationButton;
+
+        public Button changeSimulationButton;
+
+        public Button stopSimulationButton;
+        
+        
         /// <summary>
         /// 뒤로 가기 버
         /// </summary>
@@ -27,7 +34,22 @@ namespace StallCanvas
         void Start()
         {
             backButton.onClick.AddListener(goToBack);
-            startSimulationButton.onClick.AddListener(StartSimulation);
+            startSimulationButton.onClick.AddListener(() =>
+            {
+                StartSimulation(SimulationType.START);
+            });
+            stopSimulationButton.onClick.AddListener(() =>
+            {
+                StartSimulation(SimulationType.STOP);
+            });
+            changeSimulationButton.onClick.AddListener(() =>
+            {
+                StartSimulation(SimulationType.CHANGE);
+            }); 
+            moveSimulationButton.onClick.AddListener(() =>
+            {
+                StartSimulation(SimulationType.MOVE);
+            });
         }
 
         
@@ -36,9 +58,9 @@ namespace StallCanvas
             this.titleText.text = DateTime.Now.ToString("현재시각 : HH시 mm분 ss초");
         }
 
-        private void StartSimulation()
+        private void StartSimulation(SimulationType e)
         {
-            CLocalDatabase.Instance.FireSimulation();
+            CLocalDatabase.Instance.FireSimulation(e);
         }
 
         /// <summary>

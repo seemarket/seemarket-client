@@ -148,7 +148,7 @@ namespace test
                     OwnerPanel.SetActive(false);
                     StatusPanel.SetActive(true);
                     UserPanel.SetActive(false);
-                    stallCanvasControl.gameObject.SetActive(false);
+                    stallCanvasControl.gameObject.SetActive(true);
                     CObjectPool.Instance.main.forceInitialize(ShelfMode.VIEW);
                     break;
                 case CanvasStates.numStatusShowStall:

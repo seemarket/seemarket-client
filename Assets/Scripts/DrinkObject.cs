@@ -31,6 +31,51 @@ public class DrinkObject : MonoBehaviour
 
     public Vector3 previousLocation;
     public Vector3 finalLocation;
+
+
+    public int frame = 0;
+    public IEnumerator Diasppear()
+    {
+        Vector3 beforePosition = transform.position;
+        Vector3 targetPosition = transform.position + Vector3.forward * 3f;
+        frame++;
+        if (frame < 100)
+        {
+            float time = ((float) frame) / 100f;
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
+            yield return new WaitForSeconds(0.1f);
+        }
+        
+        DestoryObject();
+    }
+
+    public IEnumerator Appear()
+    {
+        Vector3 beforePosition = transform.position + Vector3.forward * 3f;
+        Vector3 targetPosition = transform.position;
+        frame++;
+        if (frame < 100)
+        {
+            float time = ((float) frame) / 100f; 
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    public IEnumerator Move(Vector3 targetPosition)
+    {
+        Vector3 beforePosition = transform.position;
+       
+        frame++;
+        if (frame < 100)
+        {
+            float time = ((float) frame) / 100f; 
+   
+            this.transform.position = Vector3.Lerp(beforePosition, targetPosition, 1f / time);
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+    
     
     void Awake()
     {

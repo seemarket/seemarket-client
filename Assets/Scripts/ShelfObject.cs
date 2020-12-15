@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Model;
 
 
 public enum ShelfMode
@@ -119,19 +120,30 @@ public class ShelfObject : MonoBehaviour
 
     public void HandleSlotUpdate(Model.SlotUpdate _)
     {
-        //Debug.Log("[123123123] Updated");
-        if (_.before_slot_info.has_drink)
+
+        switch (_.GETUpdateType())
         {
-            // soldout
-            dic[_.before_slot_info.id].DestoryObject();
-            dic[_.before_slot_info.id] = null;
-        }
-        else
-        {
-            // arrived
-            dic.Add(
-                key: _.updated_slot_info.id, 
-                value: AddDrinkObject(_.updated_slot_info));
+            case UpdateType.SOLD_OUT:
+                dic[_.before_slot_info.id].frame = 0;
+                StartCoroutine(dic[_.before_slot_info.id].Diasppear());
+                dic[_.before_slot_info.id] = null;
+                break;
+            case UpdateType.ARRIVED:
+                dic.Add(
+                    key: _.updated_slot_info.id, 
+                    value: AddDrinkObject(_.updated_slot_info));
+                dic[_.before_slot_info.id].frame = 0;
+                StartCoroutine(dic[_.before_slot_info.id].Appear());
+                break;
+            case UpdateType.MOVE:
+                Vector3 toward = new Vector3(_.updated_slot_info.row, _.updated_slot_info.column, _.updated_slot_info.depth);
+                dic[_.before_slot_info.id].frame = 0;
+                StartCoroutine(dic[_.before_slot_info.id].Move(toward));
+                break;
+            case UpdateType.CHANGE:
+                Model.Product drink = CLocalDatabase.GetProductInfo(_.updated_slot_info.drink_id);
+                dic[_.before_slot_info.id].Setup(drink);
+                break;
         }
     }
 
