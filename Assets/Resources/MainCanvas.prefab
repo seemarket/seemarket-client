@@ -2962,6 +2962,8 @@ MonoBehaviour:
   BackGroundPanel: {fileID: 0}
   UserPanel: {fileID: 2095306126771189102}
   RelocationPanel: {fileID: 7552186001844966742}
+  ScanButton: {fileID: 40006050970479183}
+  SimulateButton: {fileID: 426184942531764126}
   stallCanvasControl: {fileID: 0}
   relocationCanvasControl: {fileID: 4271241012424757994}
 --- !u!1 &1633175118155146393
@@ -3475,7 +3477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7524608040512284001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3924,7 +3926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC778\uAE30 \uC0C1\uD488"
+  m_Text: "\uC0C1\uD488 \uD655\uC778"
 --- !u!1 &4097588113926808695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,7 +4578,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2386740447620012185}
   m_HandleRect: {fileID: 1408211623820660832}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

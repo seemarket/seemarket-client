@@ -401,6 +401,7 @@
             <e p="StallCanvasControl.cs" t="Include" />
           </e>
           <e p="TestCode.cs" t="Include" />
+          <e p="TestScript.cs" t="Include" />
           <e p="TouchManager.cs" t="Include" />
         </e>
         <e p="SocketIO" t="Include">

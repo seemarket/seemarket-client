@@ -20,6 +20,7 @@
 
 using System;
 using System.Collections;
+using Model;
 
 namespace GoogleARCore.Examples.AugmentedImage
 {
@@ -68,26 +69,16 @@ namespace GoogleARCore.Examples.AugmentedImage
             Application.targetFrameRate = 60;
         }
 
-        private void Start()
-        {
-            StartCoroutine(Populate());
-        }
-
-        IEnumerator Populate()
-        {
-         
-            if (CLocalDatabase.Instance.didFetchDrink == false)
-            {
-                yield return new WaitForSeconds(1);
-                StartCoroutine(Populate());
-            }
-        }
-
+       
         /// <summary>
         /// The Unity Update method.
         /// </summary>
         public void Update()
         {
+            if (!CLocalDatabase.Instance.didFetchDrink)
+            {
+                return;
+            }
             // Exit the app when the 'back' button is pressed.
             if (Input.GetKey(KeyCode.Escape))
             {
@@ -121,7 +112,11 @@ namespace GoogleARCore.Examples.AugmentedImage
                     visualizer = (AugmentedImageVisualizer)Instantiate(
                         AugmentedImageVisualizerPrefab, anchor.transform);
                     visualizer.Image = image;
-                    _visualizers.Add(image.DatabaseIndex, visualizer);
+                    int product_id = int.Parse(image.Name);
+                    Model.Product drink = CLocalDatabase.GetProductInfo(product_id);
+                    visualizer.drinkObject.Setup(drink);
+                    visualizer.textMesh.text = drink.title;
+                   _visualizers.Add(image.DatabaseIndex, visualizer);
                 }
                 else if (image.TrackingState == TrackingState.Stopped && visualizer != null)
                 {

@@ -34,6 +34,9 @@ namespace test
         //public GameObject ObjectScanPanel;
 
 
+        public Button ScanButton;
+        public Button SimulateButton;
+
         public StallCanvasControl stallCanvasControl;
         public RelocationCanvasControl relocationCanvasControl;
         
@@ -53,13 +56,21 @@ namespace test
             CCanvasManager.Instance.SetMain(this);
             currentCanvas = CanvasStates.numInitial;
             SetCanvasState();
-       
+
             stallCanvasControl.parent = this;
             if (CCanvasManager.Instance.currentMainState == CCanvasManager.MainState.Stall)
             {
                 this.currentCanvas = CanvasStates.numStatusShowStall;
                 SetCanvasState();
             }
+            ScanButton.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("AugmentedImage");
+            });
+            SimulateButton.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("ObjectManipulation");
+            });
         }
 
         public void moveToAR()

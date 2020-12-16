@@ -26,77 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/000.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/006.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/008.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Textures/fit_to_scan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Textures/frame_base.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScript.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Configurations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/000.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/000.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/001.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/001.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/002.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/002.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/003.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/003.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/004.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/004.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/005.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/005.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/006.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/006.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/007.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/007.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/007.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/008.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/008.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/009.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/009.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/009.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/Example Database.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/Example Database.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Images/Example Database.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Images/Example Database.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/Frame Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/Frame Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/Frame Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/Frame Material.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameLowerLeft.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameLowerLeft.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameLowerLeft.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameLowerLeft.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameLowerRight.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameLowerRight.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameLowerRight.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameLowerRight.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameUpperLeft.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameUpperLeft.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameUpperLeft.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameUpperLeft.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameUpperRight.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameUpperRight.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Materials/Frame/FrameUpperRight.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Materials/Frame/FrameUpperRight.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageExampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageExampleController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageVisualizer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Textures/fit_to_scan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Textures/fit_to_scan.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Textures/fit_to_scan.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Textures/frame_base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Textures/frame_base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Textures/frame_base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/StallCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/StallCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/=y.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/=y.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/CLI/augmented_image_cli_osx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/CLI/augmented_image_cli_osx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,10 +118,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" />
       </list>
     </option>
@@ -238,7 +184,7 @@
       <workItem from="1607411041963" duration="8679000" />
       <workItem from="1607575632928" duration="231000" />
       <workItem from="1608025356834" duration="11986000" />
-      <workItem from="1608101634084" duration="2739000" />
+      <workItem from="1608101634084" duration="7033000" />
     </task>
     <servers />
   </component>
@@ -275,6 +221,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1428" y="129" key="#Notifications" timestamp="1608109900019">
+      <screen x="-1920" y="-155" width="1920" height="955" />
+    </state>
+    <state x="-1428" y="129" key="#Notifications/0.25.1440.875/-1920.-155.1920.955@-1920.-155.1920.955" timestamp="1608109900019" />
     <state x="-1462" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603879099876">
       <screen x="-1920" y="-157" width="1920" height="1057" />
     </state>
