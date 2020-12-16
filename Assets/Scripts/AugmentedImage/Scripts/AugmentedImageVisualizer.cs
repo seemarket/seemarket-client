@@ -57,6 +57,10 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public GameObject FrameUpperRight;
 
+
+        public DrinkObject drinkObject;
+
+        public TextMesh textMesh;
         /// <summary>
         /// The Unity Update method.
         /// </summary>
@@ -68,6 +72,8 @@ namespace GoogleARCore.Examples.AugmentedImage
                 FrameLowerRight.SetActive(false);
                 FrameUpperLeft.SetActive(false);
                 FrameUpperRight.SetActive(false);
+                drinkObject.gameObject.SetActive(false);
+                textMesh.gameObject.SetActive(false);
                 return;
             }
 
@@ -81,11 +87,14 @@ namespace GoogleARCore.Examples.AugmentedImage
                 (halfWidth * Vector3.left) + (halfHeight * Vector3.forward);
             FrameUpperRight.transform.localPosition =
                 (halfWidth * Vector3.right) + (halfHeight * Vector3.forward);
-
+            
+            
             FrameLowerLeft.SetActive(true);
             FrameLowerRight.SetActive(true);
             FrameUpperLeft.SetActive(true);
             FrameUpperRight.SetActive(true);
+            drinkObject.gameObject.SetActive(true);
+            textMesh.gameObject.SetActive(true);
         }
     }
 }

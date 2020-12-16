@@ -18,6 +18,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using System;
+using System.Collections;
+
 namespace GoogleARCore.Examples.AugmentedImage
 {
     using System.Collections.Generic;
@@ -63,6 +66,21 @@ namespace GoogleARCore.Examples.AugmentedImage
             // Enable ARCore to target 60fps camera capture frame rate on supported devices.
             // Note, Application.targetFrameRate is ignored when QualitySettings.vSyncCount != 0.
             Application.targetFrameRate = 60;
+        }
+
+        private void Start()
+        {
+            StartCoroutine(Populate());
+        }
+
+        IEnumerator Populate()
+        {
+         
+            if (CLocalDatabase.Instance.didFetchDrink == false)
+            {
+                yield return new WaitForSeconds(1);
+                StartCoroutine(Populate());
+            }
         }
 
         /// <summary>

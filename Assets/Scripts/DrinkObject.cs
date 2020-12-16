@@ -42,14 +42,16 @@ public class DrinkObject : MonoBehaviour
         if (frame == 0)
         { 
             beforePosition = transform.position;
-            targetPosition = transform.position + Vector3.forward * 3f;
+            targetPosition = transform.position + Vector3.forward * 0.1f;
         }
         while (frame < 100)
         {
             frame++;
             float time = ((float) frame) / 100f;
             Debug.Log(time);
-
+            Color c = m_Renderer.material.color;
+            c.a = 1f - time;
+            m_Renderer.material.color = c;
             this.transform.position = Vector3.Lerp(beforePosition, targetPosition, time);
             yield return new WaitForFixedUpdate();
         }
@@ -61,7 +63,7 @@ public class DrinkObject : MonoBehaviour
     {
         if (frame == 0)
         {
-            beforePosition = transform.position + Vector3.forward * 3f;
+            beforePosition = transform.position + Vector3.forward * 0.1f;
             targetPosition = transform.position;
         }
         while (frame < 100)
@@ -69,6 +71,9 @@ public class DrinkObject : MonoBehaviour
             frame++;
             float time = ((float) frame) / 100f; 
             Debug.Log(time);
+            Color c = m_Renderer.material.color;
+            c.a = time;
+            m_Renderer.material.color = c;
 
             this.transform.position = Vector3.Lerp(beforePosition, targetPosition, time);
             yield return null;

@@ -25,12 +25,6 @@
                 <e p="AugmentedFacesExampleController.cs" t="Include" />
               </e>
             </e>
-            <e p="AugmentedImage" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="AugmentedImageExampleController.cs" t="Include" />
-                <e p="AugmentedImageVisualizer.cs" t="Include" />
-              </e>
-            </e>
             <e p="Common" t="Include">
               <e p="Materials" t="Include">
                 <e p="Shaders" t="Include">
@@ -323,6 +317,12 @@
         <e p="Scripts" t="Include">
           <e p="ArCanvas" t="Include">
             <e p="ARCanvasControl.cs" t="Include" />
+          </e>
+          <e p="AugmentedImage" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AugmentedImageExampleController.cs" t="Include" />
+              <e p="AugmentedImageVisualizer.cs" t="Include" />
+            </e>
           </e>
           <e p="DrinkDetailCanvas" t="Include">
             <e p="DrinkDetailCanvasControl.cs" t="Include" />
