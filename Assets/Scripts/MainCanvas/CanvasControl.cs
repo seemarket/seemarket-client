@@ -62,6 +62,10 @@ namespace test
             {
                 this.currentCanvas = CanvasStates.numStatusShowStall;
                 SetCanvasState();
+            } else if (CCanvasManager.Instance.currentMainState == CCanvasManager.MainState.User)
+            {
+                this.currentCanvas = CanvasStates.numUserPanel;
+                SetCanvasState();
             }
             ScanButton.onClick.AddListener(() =>
             {

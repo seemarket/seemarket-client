@@ -26,11 +26,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScanCanvas.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScanCanvas/ScanCanvasControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScanCanvas/ScanCanvasControl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/test/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCameraManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/MoveCommand.cs" />
@@ -109,13 +115,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/PriceUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCanvasManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScanCanvas/ScanCanvasControl.cs" />
       </list>
     </option>
   </component>
@@ -176,7 +184,7 @@
       <workItem from="1607575632928" duration="231000" />
       <workItem from="1608025356834" duration="11986000" />
       <workItem from="1608101634084" duration="8063000" />
-      <workItem from="1608191659368" duration="4475000" />
+      <workItem from="1608191659368" duration="7103000" />
     </task>
     <servers />
   </component>

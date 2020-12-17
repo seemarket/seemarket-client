@@ -18,7 +18,7 @@ public class CCanvasManager : CSingletonMono<CCanvasManager>
     
     public enum MainState
     {
-        Stall, Main
+        Stall, Main, User
     }
     
     public MainState currentMainState = MainState.Main;
