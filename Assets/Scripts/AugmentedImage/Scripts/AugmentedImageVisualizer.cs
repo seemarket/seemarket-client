@@ -62,6 +62,31 @@ namespace GoogleARCore.Examples.AugmentedImage
 
         public TextMesh textMesh;
 
+
+
+        public GameObject cube;
+        public TextMesh titleCube;
+        public TextMesh priceCube;
+        public TextMesh descriptionCube;
+
+        public void setText(Model.Product p)
+        {
+            titleCube.text = p.title;
+            priceCube.text = p.price + "원";
+            string splitedDescription = "";
+            int length = p.description.Length;
+            for (int i = 0; i < length; i++)
+            {
+                splitedDescription += p.description[i];
+                if (i % 20 == 0 && i != 0)
+                {
+                    splitedDescription += "\n";
+                }
+            }
+
+            descriptionCube.text = splitedDescription;
+        }
+        
         /// <summary>
         /// The Unity Update method.
         /// </summary>
@@ -75,6 +100,7 @@ namespace GoogleARCore.Examples.AugmentedImage
                 FrameUpperRight.SetActive(false);
                 drinkObject.gameObject.SetActive(false);
                 textMesh.gameObject.SetActive(false);
+                cube.SetActive(false);
                 return;
             }
 
@@ -90,12 +116,14 @@ namespace GoogleARCore.Examples.AugmentedImage
                 (halfWidth * Vector3.right) + (halfHeight * Vector3.forward);
             drinkObject.gameObject.transform.localPosition = (halfHeight * Vector3.back);
             textMesh.transform.localPosition = (halfHeight * Vector3.back);
+            cube.transform.localPosition = halfWidth * Vector3.right; 
             FrameLowerLeft.SetActive(true);
             FrameLowerRight.SetActive(true);
             FrameUpperLeft.SetActive(true);
             FrameUpperRight.SetActive(true);
             drinkObject.gameObject.SetActive(true);
             textMesh.gameObject.SetActive(true);
+            cube.SetActive(true);
         }
     }
 }

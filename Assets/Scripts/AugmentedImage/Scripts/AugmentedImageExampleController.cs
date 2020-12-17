@@ -116,6 +116,7 @@ namespace GoogleARCore.Examples.AugmentedImage
                     Model.Product drink = CLocalDatabase.GetProductInfo(product_id);
                     visualizer.drinkObject.Setup(drink);
                     visualizer.textMesh.text = drink.title;
+                    visualizer.setText(drink);
                    _visualizers.Add(image.DatabaseIndex, visualizer);
                 }
                 else if (image.TrackingState == TrackingState.Stopped && visualizer != null)
