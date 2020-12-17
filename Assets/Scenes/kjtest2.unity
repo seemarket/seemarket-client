@@ -1178,6 +1178,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444dc1d746389a42bc945cabd29205a, type: 3}
+--- !u!114 &458384520 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8999525376235454989, guid: 3340b3823281c4d008c4722a2b9896f2, type: 3}
+  m_PrefabInstance: {fileID: 748940551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &461598463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7153,6 +7164,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3895759740675151882, guid: 7f83b046ae9f78644bd9bbf5c807fe6f, type: 3}
+      propertyPath: priceText
+      value: 
+      objectReference: {fileID: 458384520}
     - target: {fileID: 4985882542796865798, guid: 7f83b046ae9f78644bd9bbf5c807fe6f, type: 3}
       propertyPath: m_Name
       value: ShelfObject
