@@ -26,21 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TestScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/PriceUpdate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Model/PriceUpdate.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/=y.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/=y.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/CLI/augmented_image_cli_osx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/CLI/augmented_image_cli_osx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AugmentedImage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Configurations/AugmentedImagesSessionConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Prefabs/AugmentedImageVisualizer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +109,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RelocationCanvas/RelocationCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/SlotUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StallCanvas/StallCanvasControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainCanvas/CanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageExampleController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AugmentedImage/Scripts/AugmentedImageVisualizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/PriceUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CWebData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" />
       </list>
     </option>
   </component>
@@ -184,7 +178,8 @@
       <workItem from="1607411041963" duration="8679000" />
       <workItem from="1607575632928" duration="231000" />
       <workItem from="1608025356834" duration="11986000" />
-      <workItem from="1608101634084" duration="7033000" />
+      <workItem from="1608101634084" duration="8063000" />
+      <workItem from="1608191659368" duration="2128000" />
     </task>
     <servers />
   </component>
@@ -564,39 +559,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs</url>
-          <line>138</line>
+          <line>156</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" initialLine="136">
             <startOffsets>
-              <option value="3552" />
+              <option value="3914" />
             </startOffsets>
             <endOffsets>
-              <option value="3661" />
+              <option value="4023" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs</url>
-          <line>127</line>
+          <line>145</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" initialLine="126">
             <startOffsets>
-              <option value="3049" />
+              <option value="3411" />
             </startOffsets>
             <endOffsets>
-              <option value="3104" />
+              <option value="3466" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs</url>
-          <line>123</line>
+          <line>141</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ShelfObject.cs" initialLine="123">
             <startOffsets>
-              <option value="2904" />
+              <option value="3266" />
             </startOffsets>
             <endOffsets>
-              <option value="2930" />
+              <option value="3292" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />

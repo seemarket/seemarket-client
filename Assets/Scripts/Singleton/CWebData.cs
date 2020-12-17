@@ -51,6 +51,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
         SocketIOComponent.Instance.On("create_result", HandleCreateProduct);
         SocketIOComponent.Instance.On("delete_result", HandleDeleteProduct);
         SocketIOComponent.Instance.On("move_result", HandleMoveProduct);
+        SocketIOComponent.Instance.On("price", HandlePrice);
         
         
     }
@@ -58,7 +59,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
 
     public void FireSimulation(SimulationType s)
     {
-
+        SocketIOComponent.Instance.Emit("price");
         switch (s)
         {
             case SimulationType.MOVE:
@@ -87,7 +88,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
                 Debug.Log(string.Format("음료:{0}/{1}",
                     d.id, d.title));
             }
-            
+            SocketIOComponent.Instance.Emit("price");
             this.didFetchDrink = true;
             HandleStallInit();
         }));
@@ -219,6 +220,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     {
         JSONObject request = new JSONObject(
             JsonUtility.ToJson(createCommand));
+        SocketIOComponent.Instance.Emit("price");
         SocketIOComponent.Instance.Emit("create_product", request);
     }
 
@@ -243,9 +245,30 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     {
         JSONObject request = new JSONObject(
             JsonUtility.ToJson(moveCommand));
+        SocketIOComponent.Instance.Emit("price");
+
         SocketIOComponent.Instance.Emit("move_product", request);
     }
 
+
+    /// <summary>
+    /// 상품의 예상 매출액을 계산한다.
+    /// </summary>
+    /// <param name="e"></param>
+    public void HandlePrice(SocketIOEvent e)
+    {
+        Debug.Log("[SocketIO] Handle price received: " + e.name + " " + e.data);
+
+        string rawString = e.data.ToString();
+
+        PriceUpdate value = JsonUtility.FromJson<PriceUpdate>(rawString);
+        
+        Debug.Log("price result" + rawString);
+        if (CObjectPool.Instance.main != null)
+        {
+            CObjectPool.Instance.main.HandlePriceUpdate(value);   
+        }
+    }
     
     /// <summary>
     /// 초기화 후 결과를 통지받는다.
@@ -267,6 +290,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     {
         JSONObject request = new JSONObject(
             JsonUtility.ToJson(deleteCommand));
+        SocketIOComponent.Instance.Emit("price");
         SocketIOComponent.Instance.Emit("delete_product", request);
     }
     
@@ -287,6 +311,7 @@ public class CLocalDatabase : CSingletonMono<CLocalDatabase>
     public void HandleOpen(SocketIOEvent e)
     {
         Debug.Log("[SocketIO] Open received: " + e.name + " " + e.data);
+        SocketIOComponent.Instance.Emit("price");
     }
 	
     public void HandleError(SocketIOEvent e)

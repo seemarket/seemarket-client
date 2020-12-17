@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Linq;
 using Model;
+using UnityEngine.UI;
 
 
 public enum ShelfMode
@@ -26,7 +27,14 @@ public class ShelfObject : MonoBehaviour
     public Dictionary<int, DrinkObject> dic
         = new Dictionary<int, DrinkObject>();
 
+    /// <summary>
+    /// 현재 매출
+    /// </summary>
+    public int currentPrice = 0;
+    
     public ShelfMode shelfMode = ShelfMode.EDIT;
+
+    public Text priceText;
     
     private void Awake() {
 
@@ -118,6 +126,16 @@ public class ShelfObject : MonoBehaviour
         return go;
     }
 
+    public void HandlePriceUpdate(PriceUpdate _)
+    {
+        currentPrice = _.price;
+        if (priceText != null)
+        {
+            priceText.text = "예상 매출 : " + currentPrice.ToString() + "원";
+        }
+
+    }
+    
     public void HandleSlotUpdate(Model.SlotUpdate _)
     {
 
