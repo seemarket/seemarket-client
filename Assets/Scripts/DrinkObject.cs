@@ -205,11 +205,14 @@ public class DrinkObject : MonoBehaviour
     {
         if (isDragable)
         {
+            Vector3 screenSpace = Camera.main.WorldToScreenPoint (this.transform.position);
+            //offset = this.transform.position - Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, screenSpace.z));
+
             Vector3 mousePosition 
-                = new Vector3(Input.mousePosition.x, Input.mousePosition.y, this.transform.position.z);
+                = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
             //마우스 좌표를 스크린 투 월드로 바꾸고 이 객체의 위치로 설정해 준다.
             Vector3 point = Camera.main.ScreenToWorldPoint(mousePosition); // this.transform.position = new Vector3(point.x, point.y, this.transform.position.z);
-
+            Vector3 finalPoint = new Vector3(point.x, point.y, 0.3122f);
             this.transform.position = point;
             this.finalLocation = this.transform.position;
         }

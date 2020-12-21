@@ -11,7 +11,6 @@ namespace ARCanvas
     public class ARCanvasControl : UICanvasBase
     {
 
-        public Button stallButton;
         public Button prefab; // This is our prefab object that will be exposed in the inspector
         
         public GameObject gridObject;
@@ -23,14 +22,9 @@ namespace ARCanvas
         
         void Start()
         {
-            SetCanvasState();
             StartCoroutine(Populate());
         }
 
-        void SetCanvasState()
-        {
-            stallButton.onClick.AddListener(goToStall);
-        }
 
         /// <summary>
         /// 매대쪽으로 돌아간다.
