@@ -116,7 +116,7 @@ namespace GoogleARCore.Examples.AugmentedImage
                 (halfWidth * Vector3.right) + (halfHeight * Vector3.forward);
             drinkObject.gameObject.transform.localPosition = (halfHeight * Vector3.back);
             textMesh.transform.localPosition = (halfHeight * Vector3.back);
-            cube.transform.localPosition = halfWidth * Vector3.right; 
+            cube.transform.localPosition = halfWidth * 2.0f * Vector3.right; 
             FrameLowerLeft.SetActive(true);
             FrameLowerRight.SetActive(true);
             FrameUpperLeft.SetActive(true);
