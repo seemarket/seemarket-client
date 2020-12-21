@@ -14,7 +14,7 @@ namespace DefaultNamespace
        Vector2 Prev;
        public Camera ca;//Main Camera
        void Update () {
-           if(Input.touchCount == 1 ) {//터치된 손가락이 한개라면
+           /*if(Input.touchCount == 1 ) {//터치된 손가락이 한개라면
                Touch touch = Input.GetTouch(0);//먼저 터치가 된 녀석이 0번째 
                if(touch.phase == TouchPhase.Began ) {//터치가 된 상태냐
                    prevPos = touch.position - touch.deltaPosition;
@@ -35,7 +35,7 @@ namespace DefaultNamespace
                TouchData = cur.magnitude - Prev.magnitude;//magnityude는 제곱근을 계산해주는 걸로 알고있다.
                //정확한거는 잘 모르겠으나 줌 이면 1 아웃이면 -1을 리턴을 하는 거 같다. 그래서 이런식으로 하면 줌 인 아웃이 된다.
                ca.transform.Translate(0,0,TouchData * Time.deltaTime * 10.0f );
-           }
+           }*/
        }
 
 }

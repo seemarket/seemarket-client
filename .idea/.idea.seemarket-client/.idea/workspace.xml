@@ -27,14 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b236304-5cff-4b56-b173-e766ffc31783" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.seemarket-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Configurations/DefaultSessionConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Configurations/DefaultSessionConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Plugins/customized_manifest.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ARCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ARCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ObjectManipulation.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/kjtest2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/store.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/store.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +91,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkDetailCanvas/DrinkDetailCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/Examples/HelloAR/Scripts/HelloARController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Singleton/CCameraManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/MoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/DeleteCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Service/SlotService.cs" />
@@ -123,6 +118,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ScanCanvas/ScanCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ARCanvas/ARCanvasControl.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrinkObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TouchManager.cs" />
       </list>
     </option>
   </component>
@@ -185,7 +181,7 @@
       <workItem from="1608101634084" duration="8063000" />
       <workItem from="1608191659368" duration="9086000" />
       <workItem from="1608459012414" duration="3528000" />
-      <workItem from="1608525245738" duration="1572000" />
+      <workItem from="1608525245738" duration="2589000" />
     </task>
     <servers />
   </component>
