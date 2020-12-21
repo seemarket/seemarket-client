@@ -5,6 +5,6 @@ namespace Model
     [Serializable]
     public class PriceUpdate
     {
-        public int price;
+        public string price;
     }
 }

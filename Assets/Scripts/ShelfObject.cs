@@ -30,7 +30,7 @@ public class ShelfObject : MonoBehaviour
     /// <summary>
     /// 현재 매출
     /// </summary>
-    public int currentPrice = 0;
+    public string currentPrice = "0";
     
     public ShelfMode shelfMode = ShelfMode.EDIT;
 
